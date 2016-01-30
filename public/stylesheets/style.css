@@ -41,6 +41,7 @@ position: relative;
 	padding:  0px;
 	text-align:  center;
 	padding-top:  1.5em;
+	height: 226px;
 }
 
 .logo img{
@@ -53,6 +54,7 @@ position: relative;
 }
 
 .md-menu{
+	height: 226px !important;
 	width: 20%;
   display: inline-block;
   text-align: center;
@@ -96,4 +98,5 @@ margin-bottom: -35px;
 .first-content p{
 	padding-top: 30px;
 }
+
 
