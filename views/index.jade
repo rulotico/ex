@@ -1,5 +1,35 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .redbar
+  .row.menu
+    .col-md-3.logo
+        img(src="images/logo.svg", alt="")
+    .col-md-9.barmenu
+      a(href="#")
+        #1.md-menu.aviation.q AVIATION
+            br
+            img(src="images/choice.svg", alt="")
+      a(href="#")
+        #2.md-menu.consulting.q CONSULTING
+            br
+            img(src="images/choice.svg", alt="")
+      a(href="#")
+        #3.md-menu.energy.q ENERGY
+            br
+            img(src="images/choice.svg", alt="")
+      a(href="#")
+        #4.md-menu.medical.q MEDICAL
+            br
+            img(src="images/choice.svg", alt="")
+      a(href="#")
+        #5.md-menu.safety.q SAFETY
+            br
+            img(src="images/choice.svg", alt="")
+  .container.first-content
+      p Hoy en día los mercados ofrecen un reto para las empresas. Estos demandan no solo más y mejores productos y servicios; requieren también que los proveedores otorguen un servicio especializado y que cuenten con un profundo conocimiento del mercado que les permita proveer soluciones integrales para ellos. 
+      span Por lo anterior 
+      strong.blue Exaris® 
+      span se ha organizado en unidades de negocio especializadas. Cada unidad de negocios está formada por personal con amplio expertise en su mercado.
+  .img-example
+

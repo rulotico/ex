@@ -1,8 +1,99 @@
+@font-face {
+    font-family:shree;
+    src: url(/fonts/shree.ttf);
+
+}
+
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+/*red : #d30d1f*/
+/*blue : #152669*/
+/*white : #f8f8f8*/
+
+
+.blue{
+	color: #2121FF;
+}
+
+
+.redbar{
+
+height: 10px;
+width: 100%;
+background-color: #d30d1f;
+position: relative;
+
+}
+.menu{
+	margin: 0px;
+}
+
+.logo{
+	background-color:  #f8f8f8;
+	margin:  0px;
+	padding:  0px;
+	text-align:  center;
+	padding-top:  1.5em;
+}
+
+.logo img{
+	height: 90%;
+}
+
+.barmenu{
+	margin: 0px;
+	padding: 0px;
+}
+
+.md-menu{
+	width: 20%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 8%;
+  font-size: 2em;
+  color: white;
+  letter-spacing:2px;
+  font-family: shree;
+
+}
+
+
+.aviation, .consulting, .energy, .medical, .safety{
+	height: 30px;
+	-moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.aviation{background: url(../images/aviation.png)no-repeat center center ;}
+.consulting{background: url(../images/consulting.png)no-repeat center center;}
+.energy{background: url(../images/energy.png)no-repeat center center;}
+.medical{background: url(../images/medical.png)no-repeat center center;}
+.safety{background: url(../images/safety.png)no-repeat center center;}
+
+.md-menu img{
+
+height: 10px;
+
+margin-bottom: -35px;
+
+}
+
+.first-content{
+	text-align: justify;
+	padding-top: 100px;
+	max-width:900px;
+}
+
+.first-content p{
+	padding-top: 30px;
+}
+
