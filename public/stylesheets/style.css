@@ -4,13 +4,27 @@
 
 }
 
+@font-face {
+    font-family:myriad;
+    src: url(/fonts/myriad-pro.ttf);
+
+}
+
 body {
   padding: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px myriad, Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1,h2,h3,h4{
+	font-family: shree;
+}
+p, span{
+	color: #6F6F6F;
+	letter-spacing: 1px;
 }
 
 /*red : #d30d1f*/
@@ -88,15 +102,101 @@ height: 10px;
 margin-bottom: -35px;
 
 }
+.btn-info{
+	background-color: #185EEA;
+}
+
+.btn-info:hover, .btn-info:active{
+	background-color: #4A72EA;
+}
+.titulo{
+	color: #185EEA;
+}
+
+.btn{
+border: 0;
+}
 
 .first-content{
 	text-align: justify;
-	padding-top: 100px;
 	max-width:900px;
+	padding-top: 300px;
+	padding-bottom: 50px;
 }
 
 .first-content p{
 	padding-top: 30px;
+
+}
+.img-example{
+	margin-top: 80px;
+	height: 400px;
+	 background: url(../images/h_bus.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.der_main{
+	float: right;
+}
+.txt_m{
+	    padding: 20px;
 }
 
 
+.second-content{
+	text-align: justify;
+	max-width:900px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.second-content .row{
+	    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.second-content .col-md-3{
+	text-align: center;
+}
+
+.txt_m img{
+	    height: 100px;
+}
+
+/* -------------------------- */
+
+.h-img1 img{
+	height: 300px;
+}
+
+
+.h-img2 img{
+	height: 220px;
+}
+
+.h-img3 img{
+	height: 250px;
+}
+
+.h-img5 img{
+	height: 159px;
+}
+/* -------------------------- */
+.footer{
+	
+
+}
+.dat{
+	background-color: #29292C;
+	height: 400px;
+	color: #F1F0F0;
+	padding: 80px;
+}
+.map{
+	height: 400px;
+	background-color: black;
+}
+
+    

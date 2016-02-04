@@ -1,31 +1,6 @@
 extends layout
 
 block content
-  .redbar
-  .row.menu
-    .col-md-3.logo
-        img(src="images/logo.svg", alt="")
-    .col-md-9.barmenu
-      a(href="#")
-        #1.md-menu.aviation.q AVIATION
-            br
-            img(src="images/choice.svg", alt="")
-      a(href="#")
-        #2.md-menu.consulting.q CONSULTING
-            br
-            img(src="images/choice.svg", alt="")
-      a(href="#")
-        #3.md-menu.energy.q ENERGY
-            br
-            img(src="images/choice.svg", alt="")
-      a(href="#")
-        #4.md-menu.medical.q MEDICAL
-            br
-            img(src="images/choice.svg", alt="")
-      a(href="#")
-        #5.md-menu.safety.q SAFETY
-            br
-            img(src="images/choice.svg", alt="")
   .container.first-content
       p Hoy en día los mercados ofrecen un reto para las empresas. Estos demandan no solo más y mejores productos y servicios; requieren también que los proveedores otorguen un servicio especializado y que cuenten con un profundo conocimiento del mercado que les permita proveer soluciones integrales para ellos. 
       span Por lo anterior 
@@ -33,3 +8,50 @@ block content
       span se ha organizado en unidades de negocio especializadas. Cada unidad de negocios está formada por personal con amplio expertise en su mercado.
   .img-example
 
+  .container.second-content
+    p Las unidades de negocio que componen Exaris® son las siguentes:
+    h1 UNIDADES DE NEGOCIO
+    .row
+      .col-md-3.h-img1
+        img(src="images/aviation_home.png", alt="")
+      .col-md-9.txt_m
+        img(src="images/aviation.svg")
+        p.titulo Exaris© Aviation
+        p Unidad de negocios especializada en el suministro de productos para infraestructura aeroportuaria tales como consolas para torres de control, sistemas para control de tránsito aéreo, iluminación y señalización para pistas y calles de rodaje, pisos y mobiliario para aeropuertos entre otros.
+        .btn.btn-info.der_main Exaris Aviation 
+    .row
+      .col-md-9.txt_m
+        img(src="images/consulting.svg")
+        p.titulo Exaris© Consulting
+        p Unidad de negocios dedicada a la consultoría para el desarrollo y operación de proyectos hospitalarios y certificación de hospitales según criterios nacionales e internacionales.
+        .btn.btn-info Exaris Consulting
+      .col-md-3.h-img2
+        img(src="images/consulting_home.png", alt="")
+
+    .row
+      .col-md-3.h-img3
+        img(src="images/energy_home.png", alt="") 
+      .col-md-9.txt_m
+        img(src="images/energy.svg")
+        p.titulo Exaris© Energy
+        p Unidad de negocios especializada en el suministro e instalación de soluciones de energía limpia tales como energía eólica y fotovoltáica.
+        .btn.btn-info.der_main Exaris Energy 
+    
+    .row
+      .col-md-9.txt_m
+        img(src="images/medical.svg")
+        p.titulo Exaris© Medical
+        p Unidad de negocios especializada en el suministro de equipo médico hospitalario de alta especialidad, en las áreas de quirófano, mobiliario de transporte y almacenamiento, consumibles, etc.
+        .btn.btn-info Exaris Medical
+      .col-md-3
+        img(src="images/medical_home.png", alt="") 
+
+
+    .row
+      .col-md-3.h-img5
+        img(src="images/safety_home.png", alt="") 
+      .col-md-9.txt_m
+        img(src="images/safety.svg")
+        p.titulo Exaris© Safety
+        p Unidad de negocios especializada en el suministro e instalación de soluciones de energía limpia tales como energía eólica y fotovoltáica.
+        .btn.btn-info.der_main Exaris Safety
