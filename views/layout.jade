@@ -34,12 +34,33 @@ html
             img(src="images/choice.svg", alt="")
     block content
     .footer
-      .col-md-8.dat Para nosotros es muy importante estar en contacto con ustedes. Puede tener comunicación con nosotros mediante nuestras redes sociales, o bien, a los siguientes teléfonos y correos electrónicos:
+      .col-md-8.dat
+        .col-md-12.txt_contacto 
+          p Para nosotros es muy importante estar en contacto con ustedes. Puede tener comunicación con nosotros mediante nuestras redes sociales, o bien, a los siguientes teléfonos y correos electrónicos: 
         .col-md-6
-          p Teléfonos:
+          p.gray Teléfonos:
           p 01-33-30443055 / 01-33-3044-3065
-          p info@exaris.mx  -  ventas@exaris.com
-        .col-md-6 hola
+          p.red
+            a(href="") info@exaris.mx
+            span -  
+            a(href="") ventas@exaris.com
+          p Av. Vallarta #6503 Int. C2-24, Col. Ciudad Granda, Zapopan, Jalisco, México, C.P.45010
+        .col-md-6.second_section
+          div
+            a(href="") - Política de Privacidad
+          div
+            a(href="") - Terminos y Condiciones
+          div
+            a(href="") - Galería de Proyectos
+          div
+            a(href="") - Contacto
+          div.descarga Descarga nuestros catálogos
+          .form-group.catalogos
+            select.form-control
+              option 1
+              option 2
+              option 3
+
       .col-md-4.map hola
 
   script(src="http://code.jquery.com/jquery-2.1.4.min.js")

@@ -12,7 +12,7 @@
 
 body {
   padding: 0px;
-  font: 14px myriad, Helvetica, Arial, sans-serif;
+  font: 15px myriad, Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -185,8 +185,12 @@ border: 0;
 }
 /* -------------------------- */
 .footer{
-	
+	color: #BCBBBB;
 
+}
+
+.footer p{
+	color: #BCBBBB;
 }
 .dat{
 	background-color: #29292C;
@@ -199,4 +203,44 @@ border: 0;
 	background-color: black;
 }
 
-    
+.txt_contacto{
+	padding-bottom: 40px;
+    }
+
+    .gray{
+    	color: #6D6C6C !important;
+    }
+    .red a{
+    	color: #C6223F !important;
+    }
+
+.second_section div{
+	padding-left: 40px;
+}
+.descarga{
+	padding-top: 30px;
+
+}
+
+
+.catalogos{
+   width: 240px;
+   height: 34px;
+   overflow: hidden;
+   background: url(../images/arrow_select.png) no-repeat right #E9E9E9;
+   border-radius: 1px;
+ 
+   }
+
+
+.catalogos select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 1px;
+   height: 34px;
+   -webkit-appearance: none;
+   }
