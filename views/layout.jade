@@ -41,10 +41,11 @@ html
           p.gray Teléfonos:
           p 01-33-30443055 / 01-33-3044-3065
           p.red
-            a(href="") info@exaris.mx
+            a(href="mailto:info@exaris.mx") info@exaris.mx
             span -  
-            a(href="") ventas@exaris.com
+            a(href="mailto:info@exaris.mx") ventas@exaris.com
           p Av. Vallarta #6503 Int. C2-24, Col. Ciudad Granda, Zapopan, Jalisco, México, C.P.45010
+
         .col-md-6.second_section
           div
             a(href="") - Política de Privacidad
@@ -57,12 +58,24 @@ html
           div.descarga Descarga nuestros catálogos
           .form-group.catalogos
             select.form-control
-              option 1
-              option 2
-              option 3
+              option Escoge el catalogo
+              option AVIATION
+              option CONSULTING
+              option ENERGY
+              option MEDICAL
+              option SAFETY
+        .col-md-12.f_foot
+          .col-md-4.x_icn
+            img(src="../images/x_icn.svg", alt="")
 
-      .col-md-4.map hola
-
+          .col-md-4.social 
+            img(src="../images/face.svg", alt="")
+            /ExarisM
+          .col-md-4.social
+            img(src="../images/twitter.svg", alt="")
+            @ExarisM
+      .col-md-4.map
+        #map
   script(src="http://code.jquery.com/jquery-2.1.4.min.js")
   script(src="/javascripts/janimate.min.js")
   script(src="/javascripts/main.js")

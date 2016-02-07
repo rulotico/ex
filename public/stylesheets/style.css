@@ -185,22 +185,45 @@ border: 0;
 }
 /* -------------------------- */
 .footer{
-	color: #BCBBBB;
+	color: #525252;
 
 }
 
 .footer p{
-	color: #BCBBBB;
+	color: #888888;
+	font-size: 13px;
+}
+.f_foot{
+	margin-top: 40px;
+	
 }
 .dat{
 	background-color: #29292C;
-	height: 400px;
+	height: 430px;
 	color: #F1F0F0;
 	padding: 80px;
 }
 .map{
-	height: 400px;
-	background-color: black;
+	height: 430px;
+	background-color: #ff0646;
+	margin: 0px;
+	padding: 0px;
+}
+.map iframe{
+	
+
+	height: 426px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	border: 0px;
+}
+
+.red-m{
+	width: 100%;
+	height: 430px;
+	position: relative;
+	z-index: 10;
 }
 
 .txt_contacto{
@@ -214,26 +237,44 @@ border: 0;
     	color: #C6223F !important;
     }
 
-.second_section div{
-	padding-left: 40px;
+.second_section{
+	    border-left: 3px solid #125cc6;
 }
+
+.second_section div{
+	margin-left: 40px;
+}
+
 .descarga{
 	padding-top: 30px;
 
 }
+.x_icn img{
+	    height: 47px;
+    position: relative;
+    top: -15px;
+    left: -69px;
+}
 
+.social img{
+	height: 40px;
+	padding-right: 20px;
+}
 
 .catalogos{
    width: 240px;
    height: 34px;
    overflow: hidden;
    background: url(../images/arrow_select.png) no-repeat right #E9E9E9;
-   border-radius: 1px;
+   border-radius: 3px;
+       background-size: 35px 50px;
+
  
    }
 
 
 .catalogos select {
+	border-radius: 4px;
    background: transparent;
    width: 268px;
    padding: 5px;
@@ -244,3 +285,72 @@ border: 0;
    height: 34px;
    -webkit-appearance: none;
    }
+
+
+   /* MAP */
+
+
+#googleMap iframe {
+   width: 100%;
+   z-index: 1;
+
+}
+#googleMap {
+   height: 400px;
+}
+#googleMap img { max-width: none; }
+
+#map-header {
+  z-index: 10;
+}
+
+#map-banner {
+  margin-top: 100px;
+  position: absolute;
+  z-index: 1000;
+  
+}
+
+/*               PRODUCTOS */
+.producto{
+	
+	height: 600px;
+	padding: 20px;
+}
+
+.logo-p{
+margin-bottom: 20px;
+}
+
+.foto-p{
+	background-color: red;
+	height: 250px;
+}
+
+.btn-p img{
+	position: relative;
+	top: -30px;
+	height: 60px;
+}
+
+.txt-p strong{
+	font-size: 22px;
+    color: #423F3F;
+}
+.down img{
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 200px;
+
+}
+
+/*               AVIATION */
+
+.img-aviation{
+	height: 700px;
+	background: url(../images/aviation_main.png) no-repeat left top; 
+  }
+
+
+
