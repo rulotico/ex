@@ -1,7 +1,7 @@
 
-h_menu=$(".q").width();
-$(".q").animate({height:h_menu}, 700);
-$(".logo").css("height",h_menu);
+// h_menu=$(".q").width();
+// $(".q").animate({height:h_menu}, 700);
+// $(".logo").css("height",h_menu);
 
 
 $(".logo img, .menu").jAnimate('fadeIn');
@@ -13,3 +13,343 @@ $("#2").mouseover(function(){$("#2 img").jAnimate('bounceInUp');});
 $("#3").mouseover(function(){$("#3 img").jAnimate('bounceInUp');});
 $("#4").mouseover(function(){$("#4 img").jAnimate('bounceInUp');});
 $("#5").mouseover(function(){$("#5 img").jAnimate('bounceInUp');});
+
+$(".foot-p span").mouseover(function(){$(".foot-p span").jAnimate('fadeInUp');});
+
+
+function btn_active(data){
+
+  $("."+ data ).css("background-color","blue");
+
+}
+
+
+
+   if(window.location.href.indexOf("aviation") > -1) {
+   btn_active("aviation");
+   $(".logo").empty();
+   $(".logo").append('<img src="images/l_aviation.svg">');
+
+  }
+
+
+$(document).ready(function () {
+   if(window.location.href.indexOf("consulting") > -1) {
+   btn_active("consulting");
+   $(".logo").empty();
+   $(".logo").append('<img src="images/l_consulting.svg">');
+  }
+});
+
+$(document).ready(function () {
+   if(window.location.href.indexOf("medical") > -1) {
+   btn_active("medical");
+   $(".logo").empty();
+   $(".logo").append('<img src="images/l_medical.svg">');
+  }
+});
+
+$(document).ready(function () {
+   if(window.location.href.indexOf("energy") > -1) {
+   btn_active("energy");
+   $(".logo").empty();
+   $(".logo").append('<img src="images/l_energy.svg">');
+  }
+});
+
+$(document).ready(function () {
+   if(window.location.href.indexOf("safety") > -1) {
+   btn_active("safety");
+   $(".logo").empty();
+   $(".logo").append('<img src="images/l_safety.svg">');
+  }
+});
+
+//------------------------------Producto
+
+
+
+
+function medHead(){
+  $(".bar-section").append("<img src='images/l_medical.svg'>");
+  $(".bar-section").css("background-image","url(../images/med-head.jpg)");
+}
+
+function avHead(){
+  $(".bar-section").append("<img src='images/l_aviationl.svg'>");
+  $(".bar-section").css("background-image","url(../images/av-head.jpg)");
+}
+
+function enHead(){
+  $(".bar-section").append("<img src='images/l_energy.svg'>");
+  $(".bar-section").css("background-image","url(../images/en-head.jpg)");
+}
+
+function conHead(){
+  $(".bar-section").append("<img src='images/l_consulting.svg'>");
+  $(".bar-section").css("background-image","url(../images/con-head.jpg)");
+}
+
+function safHead(){
+  $(".bar-section").append("<img src='images/l_safety.svg'>");
+  $(".bar-section").css("background-image","url(../images/saf-head.jpg)");
+}
+
+
+var count= 0;
+
+
+
+function showProduct(company,product){
+
+
+  var company=company;
+  var oneProduct=product;
+
+    medHead();
+    $(".logo-p").append("<img src='images/"+company+"/"+oneProduct+".png'>")
+    $("."+oneProduct).css("display","initial");
+    $("."+oneProduct).addClass("animated fadeIn");
+    
+    for (var i = 1; i < 15; i++) {
+        
+        $.ajax({
+            url:'images/products/'+company+'/'+oneProduct+'/'+i+'.jpg',
+            type:'HEAD',
+            error: function()
+            { 
+              //file doesn't exist
+            },
+            success: function()
+            {
+                count++;
+                  $(".pic-prod").append("<div class='col-md-3 pro-"+count+"' ><img src='images/products/"+company+"/"+oneProduct+"/"+
+                    count+".jpg'> ");
+               
+            }
+        });
+        
+    };
+    
+  
+}
+
+
+var urlParts=location.hash.split('&', 2);
+urlParts[0]=urlParts[0].substr(1);
+
+showProduct(urlParts[0],urlParts[1]);
+
+
+
+
+
+
+//---------------------MEDICAL
+var ar=[
+
+  m1={
+  titulo: "Mortech",
+  content: "Desde 1985 se ha dedicado a la fabricación de equipo post mortem de alta calidad. Cuenta con un equipo altamente capacitado además de tener equipo de manufactura de última generación, lo que les permite ofrecer productos de primera; eso sin dejar de lado el excelente servicio al cliente y atención a los detalles.",
+  logo:"medical/mortech.png",  
+  imgMin:"medical/mortech",
+  link: "#medical&mortech"},
+
+  m1={
+  titulo: "Nora",
+  content: "Los pisos de la industria lo requieren todo: seguridad para la alta tecnología, resistencia a productos químicos, ergonomía para los usuarios, superficies sin poros, una aptitud óptima para la limpieza y mucho más. Las extraordinarias propiedades del producto convierten a los pisos de caucho nora en la solución ideal en la producción y el montaje, en salas blancas, en áreas ESD, en laboratorios y en centros de investigación, pero también en oficinas y áreas administrativas.",
+  logo:"medical/nora.png",
+  imgMin:"medical/nora",
+  link: "#medical&nora"},
+
+  m1={
+  titulo: "Transmotion",
+  content: "Fabricante de sillas quirúrgicas multipropósito, ideales para procedimientos de radiología, cirugía de corta estancia, recuperación, oftalmología, gastroenterología, cirugía plástica, etc. ",
+  logo:"medical/trans.png",
+  imgMin:"medical/trans",
+  link: "#medical&trans"},
+
+    m1={
+  titulo: "Metro",
+  content: "Diseño, planeación y suministro de soluciones para el transporte y almacenamiento dentro de los hospitales.",
+  logo:"medical/metro.png",
+  imgMin:"medical/metro",
+  link: "#medical&metro"},
+
+  m1={
+  titulo: "Mortara",
+  content: "Electrocardiógrafos (ECG) en reposo, electrocardiógrafos para pruebas de esfuerzo, Holters, monitoreo móvil para pacientes, monitoreo ambulatorio de presión arterial.",
+  logo:"medical/mortara.png",
+  imgMin:"medical/mortara",
+  link: "#medical&mortara"},
+
+  m1={
+  titulo: "Ergos",
+  content: "ErgoMates® es el tapete antifatiga normal y antiestático que te pones. En lugar de estar atado a un espacio definido por el área del tapete antifatiga convencional, los ErgoMates® permiten movilidad y seguridad en cada paso.",
+  logo:"medical/ergo.png",
+  imgMin:"medical/ergo",
+  link: "#medical&ergo"},
+
+  m1={
+  titulo: "Exare",
+  content: "es la línea de candados y cinchos pasivos ideales para mantener un control visual del contenido de los carros de paro, cajas de instrumental o medicamentos, gabinetes de resguardo. Cada candado/cincho viene marcado con un número de serie único. ",
+  logo:"medical/exare.png",
+  imgMin:"medical/exare",
+  link: "#medical&exare"},
+
+
+  m1={
+  titulo: "Evironmental sensors",
+  content: "Fabricante de monitores electrónicos para la medición ambiental de diferentes vapores. Ej. Oxido de etileno, formaldehído, etc.",
+  logo:"medical/sensors.png",
+  imgMin:"medical/sensors",
+  link: "#medical&sensors"},
+
+  m1={
+  titulo: "Advance Chemicals",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  logo:"",
+  imgMin:"medical/advance",
+  link: "#medical&advance"},
+
+  m1={
+  titulo: "GCX",
+  content: "Sistemas de montaje para todo tipo de monitores y equipo hospitalario, así como para computadoras y monitores LCD. Existen sistemas móviles, sistemas para pared, techo, piso, etc.",
+  logo:"medical/gcx.png",
+  imgMin:"medical/gcx",
+  link: "#medical&gcx"},
+
+  m1={
+  titulo: "Sharn",
+  content: "Las consolas Evans son diseñadas para llevar a cabo las misiones más críticas tales como Control de Tránsito Aéreo. Su estructura de acero brinda gran durabilidad requerida para misiones de alto estrés en la operación los 365 días.",
+  logo:"medical/sharn.png",
+  imgMin:"medical/sharn",
+  link: "#medical&sharn"},
+
+  m1={
+  titulo: "Action",
+  content: "Hoy en día el manejo de daños por presión en los pacientes es muy importante para los hospitales. Los posicionadores Action® ofrecen al paciente el manejo optimo de presión y reduce las llagas de presión en quirófanos y otras áreas como terapias y pacientes pediátricos.",
+  logo:"medical/action.png",
+  imgMin:"medical/action",
+  link: "#medical&action"},
+
+  m1={
+  titulo: "Medical",
+  content: "Ahora que el mercurio ha sido prohibido no debe estar más en los hospitales. Por ello Medical Indicators fabrica la mejor opción en monitoreo de temperatura. Existen diferentes modelos: desechables, reusables, para niños.",
+  logo:"medical/medical.png",
+  imgMin:"medical/medial",
+  link: "#medical&medical"},
+
+   m1={
+  titulo: "Gander",
+  content: "Los organizadores Gander permiten tener el quirófano organizado correctamente. Al mismo tiempo permite colocar en la ventana de los organizadores publicidad o comunicados del hospital.",
+  logo:"medical/gander.png",
+  imgMin:"medical/gander",
+  link: "#medical&gander"},
+
+   m1={
+  titulo: "Carstens",
+  content: "Carstens es especialista en la fabricación de expedientes y portaexpedientes  clínicos. ",
+  logo:"medical/carstens.png",
+  imgMin:"medical/carstens",
+  link: "#medical&carstens"},
+
+  m1={
+  titulo: "OP-Marks",
+  content: "OP-Marks es la mejor opción para terminar con los errores del sitio equivocado en las cirugías, ya que está diseñado para marcar al paciente de una forma clara, exacta y optima previo a la cirugía.",
+  logo:"",
+  imgMin:"medical/op",
+  link: "#medical&op"},
+
+
+  ];
+
+
+//---------------------SAFETY
+  var ar2=[
+
+   m1={
+  titulo: "Ergos",
+  content: "ErgoMates® es el tapete antifatiga normal y antiestático que te pones. En lugar de estar atado a un espacio definido por el área del tapete antifatiga convencional, los ErgoMates® permiten movilidad y seguridad en cada paso.",
+  logo:"medical/ergo.png",
+  imgMin:"medical/ergo",
+  link: "/ergo"},
+
+  m1={
+  titulo: "Evironmental sensors",
+  content: "Fabricante de monitores electrónicos para la medición ambiental de diferentes vapores. Ej. Oxido de etileno, formaldehído, etc.",
+  logo:"medical/sensors.png",
+  imgMin:"medical/sensors",
+  link: "/sensors"},
+
+  m1={
+  titulo: "Advance Chemicals",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  logo:"",
+  imgMin:"medical/advance",
+  link: "/advance"},
+
+  m1={
+  titulo: "Evac Chair",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  logo:"safety/eva.png",
+  imgMin:"safety/evan",
+  link: "/evac"},
+
+  m1={
+  titulo: "Escape",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  logo:"safety/escape.png",
+  imgMin:"safety/escape",
+  link: "/escape"},
+
+  m1={
+  titulo: "Guardian angel",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  logo:"safety/guardian.png",
+  imgMin:"safety/guardian",
+  link: "/guardian"},
+
+  m1={
+  titulo: "Sky",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  logo:"safety/sky.png",
+  imgMin:"safety/sky",
+  link: "/sky"},
+
+  m1={
+  titulo: "Nora",
+  content: "Los pisos de la industria lo requieren todo: seguridad para la alta tecnología, resistencia a productos químicos, ergonomía para los usuarios, superficies sin poros, una aptitud óptima para la limpieza y mucho más. Las extraordinarias propiedades del producto convierten a los pisos de caucho nora en la solución ideal en la producción y el montaje, en salas blancas, en áreas ESD, en laboratorios y en centros de investigación, pero también en oficinas y áreas administrativas.",
+  logo:"medical/nora.png",
+  imgMin:"medical/nora",
+  link: "/Nora"},
+  
+
+  ];
+
+
+
+
+for (var i = 0; i < ar2.length; i++) {
+ 
+$(".saf-prod").append('<div class="col-md-4 producto"><div class="foto-p'+ 
+'" style="background-image: url(../images/'+ar2[i].imgMin+'-min.png);"></div><div class="btn-p text-center"><a href="/producto'+ar2[i].link+
+'"><img src="../images/btn_p.svg" alt=""></a></div><div class="logo-p text-center"><img src="../images/'+
+ar2[i].logo+'" alt=""></div><div class="txt-p text-justify"><strong>'+
+ar2[i].titulo+' </strong><p>'+ ar2[i].content +'</p></div></div>');
+
+};
+
+
+
+for (var i = 0; i < ar.length; i++) {
+ 
+$(".main-prod").append('<div class="col-md-4 producto"><div class="foto-p'+ 
+'" style="background-image: url(../images/'+ar[i].imgMin+'-min.png);"></div><div class="btn-p text-center"><a href="/producto'+ar[i].link+
+'"><img src="../images/btn_p.svg" alt=""></a></div><div class="logo-p text-center"><img src="../images/'+
+ar[i].logo+'" alt=""></div><div class="txt-p text-justify"><strong>'+
+ar[i].titulo+' </strong><p>'+ ar[i].content +'</p></div></div>');
+
+};
+
+
