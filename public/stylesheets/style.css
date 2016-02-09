@@ -56,6 +56,7 @@ position: relative;
 	text-align:  center;
 	padding-top:  1.5em;
 	height: 226px;
+	max-height: 300px;
 }
 
 .logo img{
@@ -63,6 +64,7 @@ position: relative;
 }
 
 .barmenu{
+	min-height: 300px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -81,7 +83,7 @@ position: relative;
 }
 
 
-.aviation, .consulting, .energy, .medical, .safety{
+.aviation, .consulting, .energy, .medical-m, .safety{
 	height: 30px;
 	-moz-background-size: cover;
   -o-background-size: cover;
@@ -89,11 +91,47 @@ position: relative;
 }
 
 
-.aviation{background: url(../images/aviation.png)no-repeat center center ;}
-.consulting{background: url(../images/consulting.png)no-repeat center center;}
-.energy{background: url(../images/energy.png)no-repeat center center;}
-.medical{background: url(../images/medical.png)no-repeat center center;}
-.safety{background: url(../images/safety.png)no-repeat center center;}
+.aviation{
+	background: url(../images/aviation.png)no-repeat center center ;
+	background-color: red;
+ 	background-blend-mode: multiply;
+}
+.consulting{background: url(../images/consulting.png)no-repeat center center;
+	background-color: red;
+ 	background-blend-mode: multiply;
+}
+.energy{background: url(../images/energy.png)no-repeat center center;
+	background-color: red;
+ 	background-blend-mode: multiply;
+}
+.medical-m{background: url(../images/medical.png)no-repeat center center;
+	background-color: red;
+ 	background-blend-mode: multiply;
+}
+.safety{background: url(../images/safety.png)no-repeat center center;
+	background-color: red;
+ 	background-blend-mode: multiply;
+}
+
+.aviation:hover, .aviation:active{
+	background-color: blue;
+}
+
+.consulting:hover, .consulting:active{
+	background-color: blue;
+}
+
+.energy:hover, .energy:active{
+	background-color: blue;
+}
+
+.medical-m:hover, .medical-m:active{
+	background-color: blue;
+}
+
+.safety:hover, .safety:active{
+	background-color: blue;
+}
 
 .md-menu img{
 
@@ -286,10 +324,28 @@ border: 0;
    -webkit-appearance: none;
    }
 
+.mv{
+background-color: #D40B41;
+}
+.mvm{
 
-   /* MAP */
+	background-color: #EF0A48; 
+}
+
+.mvm, .mv{
+	min-height: 180px;
+}
+
+.mv p, .mvm p{
+	color: #5D1818;
+}
+
+.mvm h3, .mv h3{
+	color: #670505;;
+}
 
 
+ /* MAP */
 #googleMap iframe {
    width: 100%;
    z-index: 1;
@@ -318,6 +374,11 @@ border: 0;
 	padding: 20px;
 }
 
+.bar-section{
+position: relative;
+z-index: 300;
+}
+
 .logo-p{
 margin-bottom: 20px;
 }
@@ -325,6 +386,11 @@ margin-bottom: 20px;
 .foto-p{
 	background-color: red;
 	height: 250px;
+}
+
+.btn-p a:hover, .btn-p a:active{
+	opacity: .8;
+
 }
 
 .btn-p img{
@@ -345,12 +411,317 @@ margin-bottom: 20px;
 
 }
 
+
+
+
+
 /*               AVIATION */
 
 .img-aviation{
 	height: 700px;
-	background: url(../images/aviation_main.png) no-repeat left top; 
+	background: url(../images/aviation_main.png) no-repeat center center; 
   }
 
 
 
+.p-a1{
+	background: url(../images/aviation/evans-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-a1-5{
+	background: url(../images/aviation/evansa-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-a2{
+	background: url(../images/aviation/nora-min.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-a3{
+	background: url(../images/aviation/sleep-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-a4{
+	background: url(../images/aviation/avlite-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.p-a5{
+	background: url(../images/aviation/agm-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.p-a6{
+	background: url(../images/aviation/multi-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.p-a7{
+	background: url(../images/aviation/airfield-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.p-a8{
+	background: url(../images/aviation/hail-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.p-a9{
+	background: url(../images/aviation/fec-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-a10{
+	background: url(../images/aviation/strip-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-a11{
+	background: url(../images/aviation/acams-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.p-a12{
+	background: url(../images/aviation/intelcan-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+/*              CONSULTING */
+
+.img-consulting{
+	height: 400px;
+	 background: url(../images/consulting/head.jpg) no-repeat top center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	 
+  }
+
+.consulting-section h2{
+
+	    
+    color: #030350;
+    padding: 26px;
+    text-align: left;
+    border-radius: 2px;
+    font-weight: 700;
+        min-height: 348px;
+
+}
+
+.consulting-section p{
+	color: #151A3C;
+}
+
+.consulting-section h4{
+	color: #9191B5;
+}
+
+.consulting-section li{
+	color: #B0AEE4;;
+}
+
+.consulting-section hr{
+	border-top: 1px solid #0E081D
+}
+.consulting-section span{
+
+	    padding: 76px;
+    font-size: 55px;
+    color: #040C86;
+
+}
+
+.c1, .c2, .c3{
+	    min-height: 1477px;
+
+
+}
+
+.c1{
+	background-color: #3B3EC7;
+}
+
+.c2{
+	background-color: #494CDA;
+}
+
+.c3{
+	background-color: #44469E;
+}
+
+
+
+/*              ENERGY */
+
+
+.p-e1{
+	background: url(../images/energy/wind-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-e2{
+	background: url(../images/energy/green-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.evientos{
+	background-color: #FF0646;
+}
+
+.evientos p, .evientos span{
+	color: #9E1B1B;
+}
+
+.evientos strong{
+color: #000;
+}
+
+.evientos hr{
+    border-top: 1px solid #0C0404;
+}
+
+.evientos h2{
+	    color: #FFF2F2;
+}
+
+/*              MEDICAL */
+
+.p-m1{
+	background: url(../images/medical/mortech-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.p-m2{
+	background: url(../images/medical/nora-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-m3{
+	background: url(../images/medical/trans-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-m4{
+	background: url(../images/medical/metro-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p-m5{
+	background: url(../images/medical/mortara-min.png) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+/*PRODUCTO*/
+.pic-prod img{
+	height: 13em;
+	padding: 5px;
+}
+
+.pic-prod{
+	margin-top: 80px;
+}
+
+
+.bar-section{
+height: 300px;
+background-color: #5F0011;
+    margin-top: -74px;
+    background-blend-mode:multiply;
+    text-align: center;
+}
+
+.bar-section img{
+	height: 250px;
+}
+
+.logo-p{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.none{
+display: none;
+}
+
+.foot-p{
+	cursor: pointer;
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
+
+.foot-p span{
+color: #FF0646;
+font-size: 40px;
+
+}
+
+.red{
+	    font-size: 24px;
+    color: red;
+}
+
+.red a:active, .red a:hover{
+	color: red;
+}

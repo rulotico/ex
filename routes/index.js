@@ -25,4 +25,17 @@ router.get('/medical', function(req, res, next) {
 router.get('/safety', function(req, res, next) {
   res.render('safety', { title: 'Safety' });
 });
+
+
+//---------------------------------------------AVIATION
+
+
+router.get('/producto', function(req, res, next) {
+  res.render('producto', { title: 'producto' });
+});
+
+
+
+
+
 module.exports = router;
