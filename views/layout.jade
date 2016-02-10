@@ -5,6 +5,7 @@ html
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" )
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/animate.css')
+    script(src="https://maps.googleapis.com/maps/api/js?sensor=false")
 
   body
     .redbar
@@ -49,9 +50,9 @@ html
 
         .col-md-6.second_section
           div
-            a(href="#") - Política de Privacidad
+            a(href="aviso") - Política de Privacidad
           div
-            a(href="#") - Terminos y Condiciones
+            a(href="terminos") - Terminos y Condiciones
           div
             a(href="#") - Galería de Proyectos
           div
@@ -69,12 +70,14 @@ html
           .col-md-4.x_icn
             img(src="../images/x_icn.svg", alt="")
 
-          .col-md-4.social 
-            img(src="../images/face.svg", alt="")
-            /ExarisM
           .col-md-4.social
-            img(src="../images/twitter.svg", alt="")
-            @ExarisM
+            a(href="https://twitter.com/exarismx/" target="_blank") 
+              img(src="../images/face.svg", alt="")
+              /ExarisM
+          .col-md-4.social
+            a(href="https://www.facebook.com/ExarisMx/?fref=nf" target="_blank") 
+              img(src="../images/twitter.svg", alt="")
+              @ExarisM
       .col-md-4.map
         #map
   script(src="https://code.jquery.com/jquery-2.1.4.min.js")
