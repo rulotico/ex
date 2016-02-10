@@ -10,14 +10,15 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
+                    zoom: 15,
+                    disableDefaultUI: true,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                    center: new google.maps.LatLng(20.692236, -103.454046), // New York
 
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{"featureType":"all","elementType":"all","stylers":[{"hue":"#ff001b"},{"saturation":"100"},{"lightness":"-20"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"saturation":"53"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":"57"},{"lightness":"-64"},{"hue":"#ff3e00"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"saturation":"23"}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":"-18"},{"hue":"#ff0000"},{"saturation":"-16"}]}]
+                   styles: [{"featureType":"all","elementType":"geometry","stylers":[{"color":"#d80117"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"saturation":"84"},{"lightness":"58"},{"gamma":"5.76"},{"color":"#fdd2d2"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"gamma":0.01},{"lightness":20},{"color":"#981010"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"saturation":-31},{"lightness":-33},{"weight":2},{"gamma":0.8},{"color":"#ed3d3d"}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"lightness":30},{"saturation":30}]},{"featureType":"poi","elementType":"geometry","stylers":[{"saturation":20}]},{"featureType":"poi","elementType":"labels.text","stylers":[{"lightness":"-4"},{"hue":"#ff0000"},{"saturation":"48"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"lightness":20},{"saturation":-20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":"-1"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":10},{"saturation":-30}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"saturation":25},{"lightness":25}]},{"featureType":"road.highway","elementType":"all","stylers":[{"lightness":"0"},{"hue":"#ff4200"},{"saturation":"28"},{"visibility":"simplified"},{"weight":"1"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"-4"},{"invert_lightness":true},{"visibility":"simplified"},{"color":"#fb6060"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"simplified"},{"weight":"1.29"}]},{"featureType":"water","elementType":"all","stylers":[{"lightness":-20}]}]
                 };
 
                 // Get the HTML DOM element that will contain your map 
@@ -28,11 +29,15 @@
                 var map = new google.maps.Map(mapElement, mapOptions);
 
                 // Let's also add a marker while we're at it
+                var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    address: "Av. Vallarta 6503",
+                    position: new google.maps.LatLng(20.692236, -103.454046),
                     map: map,
-                    title: 'Snazzy!'
+                    title: 'Exaris',
+              
                 });
+                marker.setIcon('../images/icnmap.png');
             }
 
 
@@ -54,13 +59,28 @@ $("#5").mouseover(function(){$("#5 img").jAnimate('fadeInUp');});
 $(".foot-p span").mouseover(function(){$(".foot-p span").jAnimate('jello');});
 $("#btn_download").mouseover(function(){$("#btn_download img").jAnimate('jello');});
 
+//BOTON BACK
 
 
+$(".btn-back").mouseover(function(){
+  $(".btn-back span").removeClass("fadeInUp");
+  $(".btn-back span").removeClass("fadeInDown");
+  $(".btn-back span").addClass("rubberBand");
+});
 
+$(".btn-back").mouseleave(function(){
+  $(".btn-back span").addClass("fadeInUp");
+  $(".btn-back span").addClass("fadeInDown");
+  $(".btn-back span").removeClass("rubberBand");
+});
+
+
+// boton de la seccion
 
 function btn_active(data){
 
   $("."+ data ).css("background-color","blue");
+  $(".back").attr("href",data);
 
 }
 
@@ -189,29 +209,37 @@ var urlParts=location.hash.split('&', 2);
 urlParts[0]=urlParts[0].substr(1);
 
 showProduct(urlParts[0],urlParts[1]);
-
-
-function resize(data){
-  var q= data
+// zoom IMG
 
 
 
+var p;
+    function resize(data){
+      var q= data;
+
+      $( ".pro-"+q ).click(function() {
+          console.log("hola");
+          // CERRAMOS LA VIEJA IMAGEN
+        
+        if (q!=p) {
+            console.log(p)
+          $(".pro-"+ p +"  img").animate({height: "13em"},500);
+          $( ".pro-"+ p ).animate({width:"25%"});
+          $( ".pro-"+ p ).css("background-color", "white");
+          $( ".pro-"+ p ).removeClass("blackPic");
+        }
+
+          // ABRIMERO LA NUEVA IMAGEN
+
+          $(".pro-"+ q +"  img").animate({height: 400},500);
+          $( ".pro-"+q ).animate({width:"100%"});
+          $( ".pro-"+q ).css("background-color", "#c3c3c3;");
+          $( ".pro-"+q ).addClass("blackPic");
+
+          p=q;
 
 
-
-  $( ".pro-"+q ).click(function() {
-  console.log("hola");
-  $(".pro-"+ q +"  img").animate({height: 400},500);
-  $( ".pro-"+q ).animate({width:"100%"});
-  $( ".pro-"+q ).css("background-color", "#c3c3c3;");
-  $( ".pro-"+q ).addClass("blackPic");
-
-});
-
-
-
-
-
+    });
 
 }
 

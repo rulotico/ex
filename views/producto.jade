@@ -2,8 +2,14 @@ extends layout
 
 block content
   .col-md-12.bar-section.animated.fadeInUp
+  a.back(href="#")  
+    .btn-back.col-md-12.text-center.animated.fadeInUp
+          span.glyphicon.glyphicon-triangle-top.animated.fadeInUp
+          span  Volver a productos 
+          span.glyphicon.glyphicon-triangle-top.animated.fadeInUp
   .container
       .logo-p.text-left.col-md-12
+      
       //- PRODUCTOS DE MEDICAL
       .mortech.none.text-justify
         h1 Mortech® Manufacturing
@@ -330,3 +336,9 @@ block content
       a(href="mailto:ventas@exaris.com").red ventas@exaris.com
         br
         span.glyphicon.glyphicon-envelope
+  a.back(href="#")
+    .btn-back.col-md-12.text-center.animated.fadeInDown
+          span.glyphicon.glyphicon-triangle-top.animated.fadeInUp
+          span  Volver a productos 
+          span.glyphicon.glyphicon-triangle-top.animated.fadeInUp
+    
