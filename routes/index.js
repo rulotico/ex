@@ -26,6 +26,14 @@ router.get('/safety', function(req, res, next) {
   res.render('safety', { title: 'Safety' });
 });
 
+router.get('/aviso', function(req, res, next) {
+  res.render('aviso', { title: 'Aviso' });
+});
+
+router.get('/terminos', function(req, res, next) {
+  res.render('terminos', { title: 'Terminos' });
+});
+
 
 //---------------------------------------------AVIATION
 

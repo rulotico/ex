@@ -55,7 +55,7 @@ position: relative;
 	padding:  0px;
 	text-align:  center;
 	padding-top:  1.5em;
-	height: 226px;
+	height: 200px;
 	max-height: 300px;
 }
 
@@ -64,13 +64,13 @@ position: relative;
 }
 
 .barmenu{
-	min-height: 300px;
 	margin: 0px;
 	padding: 0px;
+	    z-index: 10000;
 }
 
 .md-menu{
-	height: 226px !important;
+	height: 200px !important;
 	width: 20%;
   display: inline-block;
   text-align: center;
@@ -79,7 +79,15 @@ position: relative;
   color: white;
   letter-spacing:2px;
   font-family: shree;
+      padding-bottom: 4%;
 
+}
+
+.first-content-a{
+	text-align: justify;
+    max-width: 900px;
+    padding-top: 300px;
+    padding-bottom: 50px;
 }
 
 /* safety*/
@@ -99,10 +107,10 @@ position: relative;
 
 /**/
 .aviation, .consulting, .energy, .medical-m, .safety{
-	height: 30px;
 	-moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	height: 30px;
 }
 
 
@@ -110,22 +118,42 @@ position: relative;
 	background: url(../images/aviation.png)no-repeat center center ;
 	background-color: red;
  	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .consulting{background: url(../images/consulting.png)no-repeat center center;
 	background-color: red;
  	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .energy{background: url(../images/energy.png)no-repeat center center;
 	background-color: red;
  	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .medical-m{background: url(../images/medical.png)no-repeat center center;
 	background-color: red;
  	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .safety{background: url(../images/safety.png)no-repeat center center;
 	background-color: red;
  	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .aviation:hover, .aviation:active{
@@ -182,13 +210,13 @@ border: 0;
 .first-content{
 	text-align: justify;
 	max-width:900px;
-	padding-top: 300px;
 	padding-bottom: 50px;
 	margin-bottom: -200px;
+	padding-top: 242px;
 }
 
 .first-content p{
-	padding-top: 30px;
+	
 
 }
 .img-example{
@@ -372,25 +400,9 @@ border: 0;
 
 
  /* MAP */
-#googleMap iframe {
-   width: 100%;
-   z-index: 1;
-
-}
-#googleMap {
-   height: 400px;
-}
-#googleMap img { max-width: none; }
-
-#map-header {
-  z-index: 10;
-}
-
-#map-banner {
-  margin-top: 100px;
-  position: absolute;
-  z-index: 1000;
-  
+#map{
+	height: 340px;
+	width:100%;
 }
 
 /*               PRODUCTOS */
@@ -745,7 +757,7 @@ color: #000;
 .bar-section{
 height: 300px;
 background-color: #5F0011;
-    margin-top: -74px;
+    margin-top: 0px;
     background-blend-mode:multiply;
     text-align: center;
 }
