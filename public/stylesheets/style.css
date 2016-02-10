@@ -192,7 +192,6 @@ border: 0;
 
 }
 .img-example{
-	margin-top: 80px;
 	height: 400px;
 	 background: url(../images/h_bus.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -211,13 +210,13 @@ border: 0;
 .second-content{
 	text-align: justify;
 	max-width:900px;
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
 .second-content .row{
-	    padding-top: 80px;
-    padding-bottom: 80px;
+	    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .second-content .col-md-3{
@@ -262,13 +261,13 @@ border: 0;
 }
 .dat{
 	background-color: #29292C;
-	height: 430px;
 	color: #F1F0F0;
 	padding: 80px;
-	padding-top: 117px;
+	padding-top: 70px;
+	height: 340px;
 }
 .map{
-	height: 430px;
+	height: 340px;
 	background-color: #ff0646;
 	margin: 0px;
 	padding: 0px;
@@ -351,7 +350,6 @@ border: 0;
    }
 
 .mv{
-    background-color:#145CCE;
 }
 .mvm{
 }
@@ -360,6 +358,7 @@ border: 0;
 	min-height: 230px;
 	padding: 30px;
 	max-height: 230px;
+	border-top: 1px solid #c3c3c3;
 }
 
 .mv p, .mvm p{
@@ -395,6 +394,13 @@ border: 0;
 }
 
 /*               PRODUCTOS */
+.blackPic{
+	
+    border-top: 1px solid #D0DFFF;;
+    border-bottom: 1px solid #D0DFFF;;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .producto{
 	
 	height: 600px;
