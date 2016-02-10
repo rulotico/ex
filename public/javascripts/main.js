@@ -1,8 +1,11 @@
 
+
+
+
+
 // h_menu=$(".q").width();
 // $(".q").animate({height:h_menu}, 700);
 // $(".logo").css("height",h_menu);
-
 
 $(".logo img, .menu").jAnimate('fadeIn');
 
@@ -137,6 +140,7 @@ if(window.location.href.indexOf("energy") > -1) {enHead();}
                 count++;
                   $(".pic-prod").append("<div class='col-md-3 pro-"+count+"' ><img src='images/products/"+company+"/"+oneProduct+"/"+
                     count+".jpg'> ");
+                   $(".pic-prod").append("<script>resize("+count+");</script>");
                
             }
         });
@@ -153,6 +157,29 @@ urlParts[0]=urlParts[0].substr(1);
 showProduct(urlParts[0],urlParts[1]);
 
 
+function resize(data){
+  var q= data
+
+
+
+
+
+
+  $( ".pro-"+q ).click(function() {
+  console.log("hola");
+  $(".pro-"+ q +"  img").animate({height: 400},500);
+  $( ".pro-"+q ).animate({width:"100%"});
+  $( ".pro-"+q ).css("background-color", "#c3c3c3;");
+  $( ".pro-"+q ).addClass("blackPic");
+
+});
+
+
+
+
+
+
+}
 
 
 
@@ -367,34 +394,36 @@ ar[i].titulo+' </strong><p>'+ ar[i].content +'</p></div></div>');
 
 
 //---------------------AVIATION
-var ar3=[
+// var ar3=[
 
-  m1={
-  titulo: "Evans Consoles ",
-  content: "Las consolas Evans son diseñadas para llevar a cabo las misiones más críticas tales como Control de Tránsito Aéreo. Su estructura de acero brinda gran durabilidad requerida para misiones de alto estrés en la operación los 365 días.",
-  logo:"aviation/evans.png",
-  imgMin:"aviation/evans",
-  link: "#aviation&evans"},
+//   m1={
+//   titulo: "Evans Consoles ",
+//   content: "Las consolas Evans son diseñadas para llevar a cabo las misiones más críticas tales como Control de Tránsito Aéreo. Su estructura de acero brinda gran durabilidad requerida para misiones de alto estrés en la operación los 365 días.",
+//   logo:"aviation/evans.png",
+//   imgMin:"aviation/evans",
+//   link: "#aviation&evans"},
 
-  m1={
-  titulo: "Evans Airport ",
-  content: "Evans Airport Solutions ofrece todo el diseño integral del interior de la terminal aérea, desde las áreas comerciales, pasando por las salas de espera, diseño y fabricación de mostradores, señalización interior, etc.",
-  logo:"aviation/evansa.png",
-  imgMin:"aviation/evansa",
-  link: "#aviation&evansa"},
+//   m1={
+//   titulo: "Evans Airport ",
+//   content: "Evans Airport Solutions ofrece todo el diseño integral del interior de la terminal aérea, desde las áreas comerciales, pasando por las salas de espera, diseño y fabricación de mostradores, señalización interior, etc.",
+//   logo:"aviation/evansa.png",
+//   imgMin:"aviation/evansa",
+//   link: "#aviation&evansa"},
 
   
 
-  ];
+//   ];
 
-for (var i = 0; i < ar3.length; i++) {
+// for (var i = 0; i < ar3.length; i++) {
  
-$(".av-prod").append('<div class="col-md-4 producto"><div class="foto-p'+ 
-'" style="background-image: url(../images/'+ar3[i].imgMin+'-min.png);"></div><div class="btn-p text-center"><a href="/producto'+ar3[i].link+
-'"><img src="../images/btn_p.svg" alt=""></a></div><div class="logo-p text-center"><img src="../images/'+
-ar3[i].logo+'" alt=""></div><div class="txt-p text-justify"><strong>'+
-ar3[i].titulo+' </strong><p>'+ ar3[i].content +'</p></div></div>');
+// $(".av-prod").append('<div class="col-md-4 producto"><div class="foto-p'+ 
+// '" style="background-image: url(../images/'+ar3[i].imgMin+'-min.png);"></div><div class="btn-p text-center"><a href="/producto'+ar3[i].link+
+// '"><img src="../images/btn_p.svg" alt=""></a></div><div class="logo-p text-center"><img src="../images/'+
+// ar3[i].logo+'" alt=""></div><div class="txt-p text-justify"><strong>'+
+// ar3[i].titulo+' </strong><p>'+ ar3[i].content +'</p></div></div>');
 
-};
+// };
+
+
 
 
