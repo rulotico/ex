@@ -82,7 +82,22 @@ position: relative;
 
 }
 
+/* safety*/
 
+.img-safety{
+	height: 400px;
+	 background: url(../images/safety/head.jpg) no-repeat top left; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      z-index: -17;
+    position: relative;
+	 
+  }
+
+
+/**/
 .aviation, .consulting, .energy, .medical-m, .safety{
 	height: 30px;
 	-moz-background-size: cover;
@@ -155,11 +170,21 @@ margin-bottom: -35px;
 border: 0;
 }
 
+.home-content{
+	text-align: justify;
+    max-width: 900px;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    
+}
+
+
 .first-content{
 	text-align: justify;
 	max-width:900px;
 	padding-top: 300px;
 	padding-bottom: 50px;
+	margin-bottom: -200px;
 }
 
 .first-content p{
@@ -240,6 +265,7 @@ border: 0;
 	height: 430px;
 	color: #F1F0F0;
 	padding: 80px;
+	padding-top: 117px;
 }
 .map{
 	height: 430px;
@@ -325,23 +351,24 @@ border: 0;
    }
 
 .mv{
-background-color: #D40B41;
+    background-color:#145CCE;
 }
 .mvm{
-
-	background-color: #EF0A48; 
 }
 
 .mvm, .mv{
-	min-height: 180px;
+	min-height: 230px;
+	padding: 30px;
+	max-height: 230px;
 }
 
 .mv p, .mvm p{
-	color: #5D1818;
+	color: #0B0C4C;
 }
 
 .mvm h3, .mv h3{
-	color: #670505;;
+	color: #071527;
+	margin-top: 0px;
 }
 
 
@@ -527,12 +554,14 @@ margin-bottom: 20px;
 /*              CONSULTING */
 
 .img-consulting{
-	height: 400px;
-	 background: url(../images/consulting/head.jpg) no-repeat top center; 
+	height: 500px;
+	 background: url(../images/consulting/head.jpg) no-repeat top left; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+      z-index: -17;
+    position: relative;
 	 
   }
 
@@ -592,7 +621,17 @@ margin-bottom: 20px;
 
 
 /*              ENERGY */
-
+.img-energy{
+	height: 600px;
+	 background: url(../images/energy/head.jpg) no-repeat top left; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      z-index: -17;
+    position: relative;
+	 
+  }
 
 .p-e1{
 	background: url(../images/energy/wind-min.png) no-repeat center center;
@@ -631,6 +670,18 @@ color: #000;
 }
 
 /*              MEDICAL */
+
+.img-medical{
+	height: 500px;
+	 background: url(../images/medical/head.jpg) no-repeat top left; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      z-index: -17;
+    position: relative;
+	 
+  }
 
 .p-m1{
 	background: url(../images/medical/mortech-min.png) no-repeat center center;
@@ -674,6 +725,7 @@ color: #000;
 
 
 /*PRODUCTO*/
+
 .pic-prod img{
 	height: 13em;
 	padding: 5px;
@@ -693,7 +745,8 @@ background-color: #5F0011;
 }
 
 .bar-section img{
-	height: 250px;
+	height: 219px;
+	padding-top: 55px;
 }
 
 .logo-p{
