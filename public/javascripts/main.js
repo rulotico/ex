@@ -14,7 +14,11 @@ $("#3").mouseover(function(){$("#3 img").jAnimate('bounceInUp');});
 $("#4").mouseover(function(){$("#4 img").jAnimate('bounceInUp');});
 $("#5").mouseover(function(){$("#5 img").jAnimate('bounceInUp');});
 
-$(".foot-p span").mouseover(function(){$(".foot-p span").jAnimate('fadeInUp');});
+$(".foot-p span").mouseover(function(){$(".foot-p span").jAnimate('jello');});
+$("#btn_download").mouseover(function(){$("#btn_download img").jAnimate('jello');});
+
+
+
 
 
 function btn_active(data){
@@ -76,7 +80,7 @@ function medHead(){
 }
 
 function avHead(){
-  $(".bar-section").append("<img src='images/l_aviationl.svg'>");
+  $(".bar-section").append("<img src='images/l_aviation.svg'>");
   $(".bar-section").css("background-image","url(../images/av-head.jpg)");
 }
 
@@ -102,11 +106,19 @@ var count= 0;
 
 function showProduct(company,product){
 
+if(window.location.href.indexOf("medical") > -1) {medHead();}
+if(window.location.href.indexOf("aviation") > -1) {avHead();}
+if(window.location.href.indexOf("safety") > -1) {safHead();}
+if(window.location.href.indexOf("consulting") > -1) {conHead();}
+if(window.location.href.indexOf("energy") > -1) {enHead();}
+
+
+
 
   var company=company;
   var oneProduct=product;
 
-    medHead();
+    
     $(".logo-p").append("<img src='images/"+company+"/"+oneProduct+".png'>")
     $("."+oneProduct).css("display","initial");
     $("."+oneProduct).addClass("animated fadeIn");
@@ -268,61 +280,61 @@ var ar=[
 //---------------------SAFETY
   var ar2=[
 
-   m1={
+  m1={
   titulo: "Ergos",
   content: "ErgoMates® es el tapete antifatiga normal y antiestático que te pones. En lugar de estar atado a un espacio definido por el área del tapete antifatiga convencional, los ErgoMates® permiten movilidad y seguridad en cada paso.",
   logo:"medical/ergo.png",
   imgMin:"medical/ergo",
-  link: "/ergo"},
+  link: "#medical&ergo"},
 
   m1={
   titulo: "Evironmental sensors",
   content: "Fabricante de monitores electrónicos para la medición ambiental de diferentes vapores. Ej. Oxido de etileno, formaldehído, etc.",
   logo:"medical/sensors.png",
   imgMin:"medical/sensors",
-  link: "/sensors"},
+  link: "#medical&sensors"},
 
   m1={
   titulo: "Advance Chemicals",
   content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
   logo:"",
   imgMin:"medical/advance",
-  link: "/advance"},
+  link: "#medical&advance"},
 
   m1={
   titulo: "Evac Chair",
-  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  content: "Las sillas de evacuación Evac+Chair® son la solución universal para el descenso por escaleras durante una emergencia.",
   logo:"safety/eva.png",
   imgMin:"safety/evan",
-  link: "/evac"},
+  link: "#safety&eva"},
 
   m1={
   titulo: "Escape",
-  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  content: "Diseño y suministro de sistemas de evacuación rápida para edificios, plantas de manufactura, escuelas, edificios altos",
   logo:"safety/escape.png",
   imgMin:"safety/escape",
-  link: "/escape"},
+  link: "#safety&escape"},
 
   m1={
   titulo: "Guardian angel",
-  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  content: "El dispositivo Guardian Angel® fabricado por 425, Inc., es la primer torreta personal. ",
   logo:"safety/guardian.png",
   imgMin:"safety/guardian",
-  link: "/guardian"},
+  link: "#safety&guardian"},
 
   m1={
   titulo: "Sky",
-  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  content: "El Skysaver® es un dispositivo de evacuación personal de descenso controlado que permite que el propietario salga del edificio en cuestión de segundos en caso de incendio, temblor, actos de terrorismo, etc.",
   logo:"safety/sky.png",
   imgMin:"safety/sky",
-  link: "/sky"},
+  link: "#safety&sky"},
 
   m1={
   titulo: "Nora",
-  content: "Los pisos de la industria lo requieren todo: seguridad para la alta tecnología, resistencia a productos químicos, ergonomía para los usuarios, superficies sin poros, una aptitud óptima para la limpieza y mucho más. Las extraordinarias propiedades del producto convierten a los pisos de caucho nora en la solución ideal en la producción y el montaje, en salas blancas, en áreas ESD, en laboratorios y en centros de investigación, pero también en oficinas y áreas administrativas.",
+  content: "Los pisos de la industria lo requieren todo: seguridad para la alta tecnología, resistencia a productos químicos, ergonomía para los usuarios, superficies sin poros, una aptitud óptima para la limpieza y mucho más.",
   logo:"medical/nora.png",
   imgMin:"medical/nora",
-  link: "/Nora"},
+  link: "#medical&nora"},
   
 
   ];
@@ -349,6 +361,39 @@ $(".main-prod").append('<div class="col-md-4 producto"><div class="foto-p'+
 '"><img src="../images/btn_p.svg" alt=""></a></div><div class="logo-p text-center"><img src="../images/'+
 ar[i].logo+'" alt=""></div><div class="txt-p text-justify"><strong>'+
 ar[i].titulo+' </strong><p>'+ ar[i].content +'</p></div></div>');
+
+};
+
+
+
+//---------------------AVIATION
+var ar3=[
+
+  m1={
+  titulo: "Evans Consoles ",
+  content: "Las consolas Evans son diseñadas para llevar a cabo las misiones más críticas tales como Control de Tránsito Aéreo. Su estructura de acero brinda gran durabilidad requerida para misiones de alto estrés en la operación los 365 días.",
+  logo:"aviation/evans.png",
+  imgMin:"aviation/evans",
+  link: "#aviation&evans"},
+
+  m1={
+  titulo: "Evans Airport ",
+  content: "Evans Airport Solutions ofrece todo el diseño integral del interior de la terminal aérea, desde las áreas comerciales, pasando por las salas de espera, diseño y fabricación de mostradores, señalización interior, etc.",
+  logo:"aviation/evansa.png",
+  imgMin:"aviation/evansa",
+  link: "#aviation&evansa"},
+
+  
+
+  ];
+
+for (var i = 0; i < ar3.length; i++) {
+ 
+$(".av-prod").append('<div class="col-md-4 producto"><div class="foto-p'+ 
+'" style="background-image: url(../images/'+ar3[i].imgMin+'-min.png);"></div><div class="btn-p text-center"><a href="/producto'+ar3[i].link+
+'"><img src="../images/btn_p.svg" alt=""></a></div><div class="logo-p text-center"><img src="../images/'+
+ar3[i].logo+'" alt=""></div><div class="txt-p text-justify"><strong>'+
+ar3[i].titulo+' </strong><p>'+ ar3[i].content +'</p></div></div>');
 
 };
 
