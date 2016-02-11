@@ -205,8 +205,9 @@ border: 0;
 	text-align: justify;
     max-width: 900px;
     padding-bottom: 50px;
-	padding-top: 276px;
+	padding-top: 259px;
     
+
 }
 
 
@@ -270,6 +271,10 @@ border: 0;
 }
 
 .h-img3 img{
+	height: 250px;
+}
+
+.h-img4 img{
 	height: 250px;
 }
 
@@ -441,7 +446,7 @@ a .btn-back:hover{
 
 .producto{
 	
-	height: 600px;
+	height: 650px;
 	padding: 20px;
 }
 
@@ -450,12 +455,10 @@ position: relative;
 z-index: 300;
 }
 
-.logo-p{
-margin-bottom: 20px;
-}
+
 
 .foto-p{
-	background-color: red;
+	background-color: #F8F5F3;
 	height: 250px;
 }
 
@@ -490,7 +493,7 @@ margin-bottom: 20px;
 
 .img-aviation{
 	height: 700px;
-	background: url(../images/aviation_main.png) no-repeat center center; 
+	background: url(../images/aviation_main.png) no-repeat left center; 
   }
 
 
@@ -644,7 +647,7 @@ margin-bottom: 20px;
 }
 
 .c1, .c2, .c3{
-	    min-height: 1477px;
+	    min-height: 1550px;
 
 
 }
@@ -794,7 +797,7 @@ background-color: #5F0011;
 }
 
 .logo-p{
-	padding-top: 30px;
+	
 	padding-bottom: 30px;
 }
 
@@ -849,12 +852,9 @@ font-size: 40px;
 
 	}
 
-	.footer p{
-		font-size: 40px;
-	}
-
+	
 	.footer .second_section{
-	font-size: 35px;
+	
 	padding-top: 60px;
 	}
 
@@ -891,6 +891,16 @@ font-size: 40px;
 		    width: 100%;
 	}
 
+	.producto p{
+		
+	}
+	
+	.producto{
+		height: inherit;
+	}
+
+	.down img{
+		height: 300px;}
 
 }
 
@@ -1165,6 +1175,47 @@ font-size: 40px;
   and (max-device-width: 1024px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .c1,.c2,.c3{
+  	min-height: 1900px;
+  }
+.md-menu{
+  	font-size: 20px;
+  }
+  .home-content{
+  	padding-top: 50px;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  .c1,.c2,.c3{
+  	min-height: 0px;
+  	padding-bottom: 50px;
+  }
+
+.first-content{
+	    padding-top: 50px;
+}
+ 
+.mvm, .mv{
+	min-height: 0px;
+}
+
+.producto{
+	height: inherit;
+}
+
+.dat{
+	height: inherit;
+}
 
 }
 

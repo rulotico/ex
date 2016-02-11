@@ -258,7 +258,7 @@ var ar=[
 
   m1={
   titulo: "Nora",
-  content: "Los pisos de la industria lo requieren todo: seguridad para la alta tecnología, resistencia a productos químicos, ergonomía para los usuarios, superficies sin poros, una aptitud óptima para la limpieza y mucho más. Las extraordinarias propiedades del producto convierten a los pisos de caucho nora en la solución ideal en la producción y el montaje, en salas blancas, en áreas ESD, en laboratorios y en centros de investigación, pero también en oficinas y áreas administrativas.",
+  content: "Los pisos de la industria lo requieren todo: seguridad para la alta tecnología, resistencia a productos químicos, ergonomía para los usuarios, superficies sin poros, una aptitud óptima para la limpieza y mucho más.",
   logo:"medical/nora.png",
   imgMin:"medical/nora",
   link: "#medical&nora"},
@@ -308,7 +308,7 @@ var ar=[
 
   m1={
   titulo: "Advance Chemicals",
-  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, etc.",
   logo:"",
   imgMin:"medical/advance",
   link: "#medical&advance"},
@@ -385,7 +385,7 @@ var ar=[
 
   m1={
   titulo: "Advance Chemicals",
-  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, gasolina, diesel, gas avión, keroseno, metanol, nitrometano, fenol, naftalina, tolueno, xileno, vapor de mercurio, alcohol isopropílico, ether, etilen glicol, freon 13, heptano, hexano, hidroquinona, isoforona, estireno, tricloroetileno, amonia,  etc.",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno,  etc.",
   logo:"",
   imgMin:"medical/advance",
   link: "#medical&advance"},
@@ -433,11 +433,11 @@ var ar=[
 
 for (var i = 0; i < ar2.length; i++) {
  
-$(".saf-prod").append('<div class="col-md-4 producto"><div class="foto-p'+ 
-'" style="background-image: url(../images/'+ar2[i].imgMin+'-min.png);"></div><div class="btn-p text-center"><a href="/producto'+ar2[i].link+
-'"><img src="../images/btn_p.svg" alt=""></a></div><div class="logo-p text-center"><img src="../images/'+
+$(".saf-prod").append('<a href="/producto'+ar2[i].link+'"><div class="col-md-4 producto"><div class="foto-p'+ 
+'" style="background-image: url(../images/'+ar2[i].imgMin+'-min.png);"></div><div class="btn-p text-center">'+
+'<img src="../images/btn_p.svg" alt=""></div><div class="logo-p text-center"><img src="../images/'+
 ar2[i].logo+'" alt=""></div><div class="txt-p text-justify"><strong>'+
-ar2[i].titulo+' </strong><p>'+ ar2[i].content +'</p></div></div>');
+ar2[i].titulo+' </strong><p>'+ ar2[i].content +'</p></div></div></a>');
 
 };
 
@@ -445,11 +445,11 @@ ar2[i].titulo+' </strong><p>'+ ar2[i].content +'</p></div></div>');
 
 for (var i = 0; i < ar.length; i++) {
  
-$(".main-prod").append('<div class="col-md-4 producto"><div class="foto-p'+ 
-'" style="background-image: url(../images/'+ar[i].imgMin+'-min.png);"></div><div class="btn-p text-center"><a href="/producto'+ar[i].link+
-'"><img src="../images/btn_p.svg" alt=""></a></div><div class="logo-p text-center"><img src="../images/'+
+$(".main-prod").append('<a href="/producto'+ar[i].link+'"><div class="col-md-4 producto"><div class="foto-p'+ 
+'" style="background-image: url(../images/'+ar[i].imgMin+'-min.png);"></div><div class="btn-p text-center">'+
+'<img src="../images/btn_p.svg" alt=""></div><div class="logo-p text-center"><img src="../images/'+
 ar[i].logo+'" alt=""></div><div class="txt-p text-justify"><strong>'+
-ar[i].titulo+' </strong><p>'+ ar[i].content +'</p></div></div>');
+ar[i].titulo+' </strong><p>'+ ar[i].content +'</p></div></div></a>');
 
 };
 
