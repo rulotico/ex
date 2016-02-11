@@ -1191,6 +1191,15 @@ font-size: 40px;
   .home-content{
   	padding-top: 50px;
   }
+	
+.mv,.mvm{
+	max-height: inherit;
+}
+
+.pic-prod img{
+height: 400px;
+}
+
 }
 
 
