@@ -28,13 +28,18 @@ html
             br
             img(src="images/choice.svg", alt="")
       a(href="medical")
-        #4.md-menu.medical-m.q MEDICAL
+        #4.md-menu.medical.q MEDICAL
             br
             img(src="images/choice.svg", alt="")
       a(href="safety")
         #5.md-menu.safety.q SAFETY
             br
             img(src="images/choice.svg", alt="")
+    .help_btns.animated.fadeInRight
+      .up
+        span.glyphicon.glyphicon-chevron-up
+      .home
+        span.glyphicon.glyphicon-home
     block content
     .footer
       .col-md-8.dat
@@ -42,7 +47,8 @@ html
         //-   p Para nosotros es muy importante estar en contacto con ustedes. Puede tener comunicación con nosotros mediante nuestras redes sociales, o bien, a los siguientes teléfonos y correos electrónicos: 
         .col-md-6
           p.gray Teléfonos:
-          p 01-33-30443055 / 01-33-3044-3065
+          a(href="tel:01-33-30443055") 01-33-3044-3055 /
+          a(href="tel:01-33-30443055") 01-33-3044-3065
           p.red
             a(href="mailto:info@exaris.mx") info@exaris.mx
             span -  
@@ -60,7 +66,7 @@ html
           div.descarga Descarga nuestros catálogos
           .form-group.catalogos
             select.form-control
-              option Escoge el catalogo
+              option Escoge el catálogo
               option AVIATION
               option CONSULTING
               option ENERGY
@@ -71,11 +77,11 @@ html
             img(src="../images/x_icn.svg", alt="")
 
           .col-md-4.social
-            a(href="https://twitter.com/exarismx/" target="_blank") 
+            a(href="https://www.facebook.com/ExarisMx/?fref=nf" target="_blank") 
               img(src="../images/face.svg", alt="")
               /ExarisM
           .col-md-4.social
-            a(href="https://www.facebook.com/ExarisMx/?fref=nf" target="_blank") 
+            a(href="https://twitter.com/exarismx/" target="_blank") 
               img(src="../images/twitter.svg", alt="")
               @ExarisM
       .col-md-4.map
