@@ -324,7 +324,7 @@ var ar=[
   link: "#medical&mortara"},
 
   m1={
-  titulo: "Ergos",
+  titulo: "ErgoMates",
   content: "ErgoMates® es el tapete antifatiga normal y antiestático que te pones. En lugar de estar atado a un espacio definido por el área del tapete antifatiga convencional, los ErgoMates® permiten movilidad y seguridad en cada paso.",
   logo:"medical/ergo.png",
   imgMin:"medical/ergo",
@@ -409,7 +409,7 @@ var ar=[
   var ar2=[
 
   m1={
-  titulo: "Ergos",
+  titulo: "ErgoMates",
   content: "ErgoMates® es el tapete antifatiga normal y antiestático que te pones. En lugar de estar atado a un espacio definido por el área del tapete antifatiga convencional, los ErgoMates® permiten movilidad y seguridad en cada paso.",
   logo:"safety/ergo_p.png",
   imgMin:"safety/ergo_p",
