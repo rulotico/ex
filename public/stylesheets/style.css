@@ -16,6 +16,10 @@ body {
   
 }
 
+ul{
+	font-size: 15px;
+}
+
 a {
   color: #00B7FF;
 }
@@ -40,6 +44,7 @@ p, span{
 	z-index: 100000;
 	right: 15px;
 	top:30%;
+	display: none;
 }
 
 .up{
@@ -716,11 +721,11 @@ z-index: 300;
 }
 
 .consulting-section h4{
-	color: #DBDBFF;
+	color: #4949C5;
 }
 
 .consulting-section li{
-	color: #B8B6FF;
+	color: #1612A9;
 }
 
 .consulting-section hr{
@@ -743,15 +748,15 @@ z-index: 300;
 .c1{
 	/*background-color: #3B3EC7;*/
 	
-	background-color:  #7174EF;
+	background-color:  #F3F3F5	;
 }
 
 .c2{
-	background-color: #696BE0;
+	background-color: #F9F9F9;
 }
 
 .c3{
-	background-color: #6466D0;
+	background-color: #F0F0F1;
 }
 
 
@@ -1175,6 +1180,11 @@ font-size: 40px;
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+
+
+
+
+
 .c1, .c2 ,.c3{
 	    padding-left: 60px;
     padding-right: 60px;
@@ -1278,6 +1288,10 @@ font-size: 40px;
 
 @media (max-width: 1200px) {
 
+	.help_btns{
+		display: none;
+	}
+
   .c1,.c2,.c3{
   	min-height: 1900px;
   }
@@ -1300,7 +1314,15 @@ height: 400px;
 
 
 @media (max-width: 992px) {
+.h-img1,.h-img2,.h-img3,.h-img4, .h-img5, .h-img6{
+	        margin-left: 38%;
+    		margin-top: 133px;
+}
 
+.btn{
+	font-size: 35px;
+	padding: 20px;
+}
   .c1,.c2,.c3{
   	min-height: 0px;
   	padding-bottom: 50px;
