@@ -35,6 +35,61 @@ p, span{
 /*white : #f8f8f8*/
 
 
+.help_btns{
+	position: fixed;
+	z-index: 100000;
+	right: 15px;
+	top:30%;
+}
+
+.up{
+	background-color: #FF4539;
+
+	padding: 15px;
+	border-radius: 20px;
+	    padding: 5px 10px 10px 10px;
+	        margin-bottom: 14px;
+	        cursor: pointer;
+
+}
+
+.up:hover, .home:hover{
+	background-color: #8E2822;
+
+}
+
+.up span:hover, .home span:hover{
+	color: white;
+
+}
+
+
+
+
+.up span{
+	position: relative;
+    top: 6px;
+    right: -1px;
+    color: #521721;
+
+}
+
+
+.home {
+	background-color: #FF4539;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 20px;
+	    padding: 2px 7px 12px 10px;
+}
+
+.home span{
+	position: relative;
+        top: 7px;
+    right: 1px;
+    color: #521721;
+}
+
 .blue{
 	color: #2121FF;
 }
@@ -109,7 +164,7 @@ position: relative;
 
 
 /**/
-.aviation, .consulting, .energy, .medical-m, .safety{
+.aviation, .consulting, .energy, .medical, .safety{
 	-moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -142,7 +197,7 @@ position: relative;
   -o-background-size: cover;
   background-size: cover;
 }
-.medical-m{background: url(../images/medical.png)no-repeat center center;
+.medical{background: url(../images/medical.png)no-repeat center center;
 	background-color: red;
  	background-blend-mode: multiply;
  	-webkit-background-size: cover;
@@ -171,7 +226,7 @@ position: relative;
 	background-color: blue;
 }
 
-.medical-m:hover, .medical-m:active{
+.medical:hover, .medical:active{
 	background-color: blue;
 }
 
@@ -225,7 +280,7 @@ border: 0;
 }
 .img-example{
 	height: 400px;
-	 background: url(../images/h_bus.png) no-repeat center center fixed; 
+	 background: url(../images/business.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -261,25 +316,54 @@ border: 0;
 
 /* -------------------------- */
 
-.h-img1 img{
-	height: 300px;
+.h-img1 {
+	    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-top: 79px;
+    border-radius: 100px;
+    background: url(../images/av-head.jpg) no-repeat;
+    background-size: 500px;
+    background-position: -48px; 
+  
 }
 
 
-.h-img2 img{
-	height: 220px;
+.h-img2 {
+	height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-top: 79px;
+    border-radius: 100px;
+    background: url(../images/con-head.jpg) no-repeat;
+    background-size: 500px;
+    background-position: -48px; 
 }
 
-.h-img3 img{
-	height: 250px;
+.h-img3{
+	height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-top: 79px;
+    border-radius: 100px;
+    background: url(../images/1a.jpg) no-repeat;
+        background-size: 242px;
+    background-position: -15px;
 }
 
-.h-img4 img{
-	height: 250px;
+.h-img4 {
+	height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-top: 79px;
+    border-radius: 100px;
+    background: url(../images/m2.jpg) no-repeat;
+        background-size: 242px;
+    background-position: -15px;
 }
 
 .h-img5 img{
-	height: 159px;
+	    height: 193px;
 }
 /* -------------------------- */
 .footer{
@@ -493,7 +577,11 @@ z-index: 300;
 
 .img-aviation{
 	height: 700px;
-	background: url(../images/aviation_main.png) no-repeat left center; 
+	background: url(../images/prway.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
   }
 
 
@@ -615,7 +703,7 @@ z-index: 300;
 .consulting-section h2{
 
 	    
-    color: #030350;
+    color: #262663;
     padding: 26px;
     text-align: left;
     border-radius: 2px;
@@ -628,11 +716,11 @@ z-index: 300;
 }
 
 .consulting-section h4{
-	color: #9191B5;
+	color: #DBDBFF;
 }
 
 .consulting-section li{
-	color: #B0AEE4;;
+	color: #B8B6FF;
 }
 
 .consulting-section hr{
@@ -642,7 +730,7 @@ z-index: 300;
 
 	    padding: 76px;
     font-size: 55px;
-    color: #040C86;
+    color: #3C429E;
 
 }
 
@@ -653,16 +741,17 @@ z-index: 300;
 }
 
 .c1{
-	background-color: #3B3EC7;
+	/*background-color: #3B3EC7;*/
 	
+	background-color:  #7174EF;
 }
 
 .c2{
-	background-color: #494CDA;
+	background-color: #696BE0;
 }
 
 .c3{
-	background-color: #44469E;
+	background-color: #6466D0;
 }
 
 
@@ -697,11 +786,11 @@ z-index: 300;
 }
 
 .evientos{
-	background-color: #FF0646;
+	background-color: #0C4ADC;
 }
 
 .evientos p, .evientos span{
-	color: #9E1B1B;
+	color: #030310;
 }
 
 .evientos strong{
@@ -717,6 +806,13 @@ color: #000;
 }
 
 /*              MEDICAL */
+.none ul{
+font-size: 15px;}
+
+.mor .t{
+font-size: 30px;
+font-family: shree;
+}
 
 .img-medical{
 	height: 500px;
@@ -797,7 +893,7 @@ background-color: #5F0011;
 }
 
 .logo-p{
-	
+	    padding-top: 30px;
 	padding-bottom: 30px;
 }
 

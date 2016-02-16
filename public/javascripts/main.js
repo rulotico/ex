@@ -1,5 +1,24 @@
+//HELP BTNS
+
+$(".up").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+var root = location.protocol + '//' + location.host;
+
+
+$(".home").click(function() {
+  window.location.href = root;
+});
+
+
+
+
 
 //MAP
+
+
 
 
  // When the window has finished loading create our google map below
@@ -132,27 +151,27 @@ $(document).ready(function () {
 
 
 function medHead(){
-  $(".bar-section").append("<img src='images/l_medical.svg'>");
+  $(".bar-section").append("<img src='images/l_medical_w.svg'>");
   $(".bar-section").css("background-image","url(../images/med-head.jpg)");
 }
 
 function avHead(){
-  $(".bar-section").append("<img src='images/l_aviation.svg'>");
+  $(".bar-section").append("<img src='images/l_aviation_w.svg'>");
   $(".bar-section").css("background-image","url(../images/av-head.jpg)");
 }
 
 function enHead(){
-  $(".bar-section").append("<img src='images/l_energy.svg'>");
+  $(".bar-section").append("<img src='images/l_energy_w.svg'>");
   $(".bar-section").css("background-image","url(../images/en-head.jpg)");
 }
 
 function conHead(){
-  $(".bar-section").append("<img src='images/l_consulting.svg'>");
+  $(".bar-section").append("<img src='images/l_consulting_w.svg'>");
   $(".bar-section").css("background-image","url(../images/con-head.jpg)");
 }
 
 function safHead(){
-  $(".bar-section").append("<img src='images/l_safety.svg'>");
+  $(".bar-section").append("<img src='images/l_safety_w.svg'>");
   $(".bar-section").css("background-image","url(../images/saf-head.jpg)");
 }
 
@@ -180,7 +199,7 @@ if(window.location.href.indexOf("energy") > -1) {enHead();}
     $("."+oneProduct).css("display","initial");
     $("."+oneProduct).addClass("animated fadeIn");
     
-    for (var i = 1; i < 15; i++) {
+    for (var i = 1; i < 60; i++) {
         
         $.ajax({
             url:'images/products/'+company+'/'+oneProduct+'/'+i+'.jpg',
@@ -204,11 +223,16 @@ if(window.location.href.indexOf("energy") > -1) {enHead();}
   
 }
 
+//get the producto by url
+
 
 var urlParts=location.hash.split('&', 2);
 urlParts[0]=urlParts[0].substr(1);
 
 showProduct(urlParts[0],urlParts[1]);
+
+
+
 // zoom IMG
 
 
@@ -307,7 +331,7 @@ var ar=[
   link: "#medical&sensors"},
 
   m1={
-  titulo: "Advance Chemicals",
+  titulo: "Advance Chemical Sensors",
   content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, etc.",
   logo:"",
   imgMin:"medical/advance",
@@ -372,9 +396,9 @@ var ar=[
   m1={
   titulo: "Ergos",
   content: "ErgoMates® es el tapete antifatiga normal y antiestático que te pones. En lugar de estar atado a un espacio definido por el área del tapete antifatiga convencional, los ErgoMates® permiten movilidad y seguridad en cada paso.",
-  logo:"medical/ergo.png",
-  imgMin:"medical/ergo",
-  link: "#medical&ergo"},
+  logo:"safety/ergo_p.png",
+  imgMin:"safety/ergo_p",
+  link: "#safety&ergo_p"},
 
   m1={
   titulo: "Evironmental sensors",
@@ -421,9 +445,9 @@ var ar=[
   m1={
   titulo: "Nora",
   content: "Los pisos de la industria lo requieren todo: seguridad para la alta tecnología, resistencia a productos químicos, ergonomía para los usuarios, superficies sin poros, una aptitud óptima para la limpieza y mucho más.",
-  logo:"medical/nora.png",
-  imgMin:"medical/nora",
-  link: "#medical&nora"},
+  logo:"safety/nora_s.png",
+  imgMin:"safety/nora_s",
+  link: "#safety&nora_s"},
   
 
   ];
