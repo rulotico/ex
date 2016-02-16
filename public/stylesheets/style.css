@@ -812,7 +812,14 @@ color: #000;
 
 /*              MEDICAL */
 .none ul{
-font-size: 15px;}
+
+	color: #6F6F6F;
+    letter-spacing: 1px;
+    font-family: myriad;
+    font-size: 15px;
+
+
+}
 
 .mor .t{
 font-size: 30px;
