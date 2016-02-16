@@ -1,6 +1,7 @@
 //HELP BTNS
 
-$(".up").click(function() {
+
+  $(".up").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
@@ -15,6 +16,20 @@ $(".home").click(function() {
 
 
 
+
+
+
+
+$(function () {
+             var $win = $(window);
+
+             $win.scroll(function () {
+                 if ($win.scrollTop() > 0){
+                    $(".help_btns").css("display","inherit");
+                  }  
+             });
+                 
+         });
 
 //MAP
 
