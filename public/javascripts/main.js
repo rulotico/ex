@@ -332,7 +332,7 @@ var ar=[
 
   m1={
   titulo: "Exare",
-  content: "es la línea de candados y cinchos pasivos ideales para mantener un control visual del contenido de los carros de paro, cajas de instrumental o medicamentos, gabinetes de resguardo. Cada candado/cincho viene marcado con un número de serie único. ",
+  content: "Es la línea de candados y cinchos pasivos ideales para mantener un control visual del contenido de los carros de paro, cajas de instrumental o medicamentos, gabinetes de resguardo. Cada candado/cincho viene marcado con un número de serie único. ",
   logo:"medical/exare.png",
   imgMin:"medical/exare",
   link: "#medical&exare"},
@@ -361,7 +361,7 @@ var ar=[
 
   m1={
   titulo: "Sharn",
-  content: "Las consolas Evans son diseñadas para llevar a cabo las misiones más críticas tales como Control de Tránsito Aéreo. Su estructura de acero brinda gran durabilidad requerida para misiones de alto estrés en la operación los 365 días.",
+  content: "Fabrica una amplia línea de productos para anestesia y Ceye. Desde sensores de temperatura digitales y desechables, protectores de ojos y una línea completa de cepillos para lavado de todo tipo de instrumental quirúrgico.",
   logo:"medical/sharn.png",
   imgMin:"medical/sharn",
   link: "#medical&sharn"},
@@ -407,28 +407,6 @@ var ar=[
 
 //---------------------SAFETY
   var ar2=[
-
-  m1={
-  titulo: "ErgoMates",
-  content: "ErgoMates® es el tapete antifatiga normal y antiestático que te pones. En lugar de estar atado a un espacio definido por el área del tapete antifatiga convencional, los ErgoMates® permiten movilidad y seguridad en cada paso.",
-  logo:"safety/ergo_p.png",
-  imgMin:"safety/ergo_p",
-  link: "#safety&ergo_p"},
-
-  m1={
-  titulo: "Evironmental sensors",
-  content: "Fabricante de monitores electrónicos para la medición ambiental de diferentes vapores. Ej. Oxido de etileno, formaldehído, etc.",
-  logo:"medical/sensors.png",
-  imgMin:"medical/sensors",
-  link: "#medical&sensors"},
-
-  m1={
-  titulo: "Advance Chemicals",
-  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno,  etc.",
-  logo:"",
-  imgMin:"medical/advance",
-  link: "#medical&advance"},
-
   m1={
   titulo: "Evac Chair",
   content: "Las sillas de evacuación Evac+Chair® son la solución universal para el descenso por escaleras durante una emergencia.",
@@ -450,12 +428,36 @@ var ar=[
   imgMin:"safety/guardian",
   link: "#safety&guardian"},
 
+
   m1={
   titulo: "Sky",
   content: "El Skysaver® es un dispositivo de evacuación personal de descenso controlado que permite que el propietario salga del edificio en cuestión de segundos en caso de incendio, temblor, actos de terrorismo, etc.",
   logo:"safety/sky.png",
   imgMin:"safety/sky",
   link: "#safety&sky"},
+
+
+  m1={
+  titulo: "ErgoMates",
+  content: "ErgoMates® es el tapete antifatiga normal y antiestático que te pones. En lugar de estar atado a un espacio definido por el área del tapete antifatiga convencional, los ErgoMates® permiten movilidad y seguridad en cada paso.",
+  logo:"safety/ergo_p.png",
+  imgMin:"safety/ergo_p",
+  link: "#safety&ergo_p"},
+
+  m1={
+  titulo: "Evironmental sensors",
+  content: "Fabricante de monitores electrónicos para la medición ambiental de diferentes vapores. Ej. Oxido de etileno, formaldehído, etc.",
+  logo:"safety/sensors.png",
+  imgMin:"safety/sensors",
+  link: "#safety&sensors"},
+
+  m1={
+  titulo: "Advance Chemicals",
+  content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno,  etc.",
+  logo:"",
+  imgMin:"safety/advance",
+  link: "#safety&advance"},
+
 
   m1={
   titulo: "Nora",
@@ -524,6 +526,164 @@ ar[i].titulo+' </strong><p>'+ ar[i].content +'</p></div></div></a>');
 // ar3[i].titulo+' </strong><p>'+ ar3[i].content +'</p></div></div>');
 
 // };
+
+// ***************************************   GET IMAGES FROM GALLERIES
+
+
+$(".p1").click(function(){
+    $(".squares").empty();
+    var count=0;
+    get_img(count);
+    
+   
+       function get_img(data){
+
+          count=data+1;
+
+          $.ajax({
+              url:'images/projects/cancer/'+count+'.jpg',
+              type:'HEAD',
+              error: function()
+              { 
+                console.log(":(");
+                $(".squares").append('<script>$(".img_square").click(function(){route=$(this).attr("value");lroom(route);});</script>');
+              },
+              success: function()
+              {
+                    img_url='images/projects/cancer/'+count+'.jpg'
+                    $(".squares").append("<div class='animated fadeInUp' ><div class='col-md-4 img_square' style='background-image:url(images/projects/cancer/"+
+                      count+".jpg);' value='"+img_url+"' ></div></div>");
+                  get_img(count);
+                 
+              }
+          });
+       }
+
+
+  
+});
+
+// ***************************************   GET IMAGES FROM GALLERIES
+
+
+$(".p2").click(function(){
+    $(".squares").empty();
+    var count=0;
+    get_img(count);
+    
+   
+       function get_img(data){
+
+          count=data+1;
+
+          $.ajax({
+              url:'images/projects/cmno/'+count+'.jpg',
+              type:'HEAD',
+              error: function()
+              { 
+                console.log(":(");
+                $(".squares").append('<script>$(".img_square").click(function(){route=$(this).attr("value");lroom(route);});</script>');
+              },
+              success: function()
+              {
+                    img_url='images/projects/cmno/'+count+'.jpg'
+                    $(".squares").append("<div class='animated fadeInUp' ><div class='col-md-4 img_square' style='background-image:url(images/projects/cmno/"+
+                      count+".jpg);' value='"+img_url+"' ></div></div>");
+                  get_img(count);
+                 
+              }
+          });
+       }
+
+
+  
+});
+
+
+// ***************************************   GET IMAGES FROM GALLERIES
+
+
+$(".p3").click(function(){
+    $(".squares").empty();
+    var count=0;
+    get_img(count);
+    
+   
+       function get_img(data){
+
+          count=data+1;
+
+          $.ajax({
+              url:'images/projects/issste/'+count+'.jpg',
+              type:'HEAD',
+              error: function()
+              { 
+                console.log(":(");
+                $(".squares").append('<script>$(".img_square").click(function(){route=$(this).attr("value");lroom(route);});</script>');
+              },
+              success: function()
+              {
+                    img_url='images/projects/issste/'+count+'.jpg'
+                    $(".squares").append("<div class='animated fadeInUp' ><div class='col-md-4 img_square' style='background-image:url(images/projects/issste/"+
+                      count+".jpg);' value='"+img_url+"' ></div></div>");
+                  get_img(count);
+                 
+              }
+          });
+       }
+
+
+  
+});
+
+// ***************************************   GET IMAGES FROM GALLERIES
+
+
+$(".p4").click(function(){
+    $(".squares").empty();
+    var count=0;
+    get_img(count);
+    
+   
+       function get_img(data){
+
+          count=data+1;
+
+          $.ajax({
+              url:'images/projects/unam/'+count+'.jpg',
+              type:'HEAD',
+              error: function()
+              { 
+                console.log(":(");
+                $(".squares").append('<script>$(".img_square").click(function(){route=$(this).attr("value");lroom(route);});</script>');
+              },
+              success: function()
+              {
+                    img_url='images/projects/unam/'+count+'.jpg'
+                    $(".squares").append("<div class='animated fadeInUp' ><div class='col-md-4 img_square' style='background-image:url(images/projects/unam/"+
+                      count+".jpg);' value='"+img_url+"' ></div></div>");
+                  get_img(count);
+                 
+              }
+          });
+       }
+
+
+  
+});
+
+
+
+
+function lroom(data){
+  console.log(data);
+  $("body").append("<div class='full'><img class='animated fadeInDown' src='" + data + "' alt='' /></div>");
+  $("body").append("<script>$('.full').click(function(){ $('.full').remove(); });</script>");
+}
+
+
+
+
 
 
 

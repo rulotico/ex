@@ -34,6 +34,10 @@ router.get('/terminos', function(req, res, next) {
   res.render('terminos', { title: 'Terminos' });
 });
 
+router.get('/projects', function(req, res, next) {
+  res.render('projects', { title: 'Projects' });
+});
+
 
 //---------------------------------------------AVIATION
 

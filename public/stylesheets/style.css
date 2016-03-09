@@ -24,7 +24,7 @@ a {
   color: #00B7FF;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,.h1,.h2,.h3,.h4{
 	font-family: shree;
 }
 p, span{
@@ -32,6 +32,10 @@ p, span{
 	letter-spacing: 1px;
 	font-family:myriad;
 	font-size: 15px;
+}
+
+i{
+	color: #BBB8B8;
 }
 
 /*red : #d30d1f*/
@@ -740,7 +744,8 @@ z-index: 300;
 }
 
 .c1, .c2, .c3{
-	    min-height: 1550px;
+	        min-height: 1590px;
+	        min-height: 1590px;
 
 
 }
@@ -1012,6 +1017,111 @@ font-size: 40px;
 
 }
 
+/*PROJECTS    */
+
+.projects{
+	padding-top: 220px;
+	
+}
+
+.projects .col-md-4{
+   
+}
+
+.title_projects{
+	background-color: #152669;
+	padding: 20px;
+	min-height: 250px;
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-family: shree;
+    color: #E7E8E8;
+}
+
+.p1{
+	background: url(../images/safety.png)no-repeat center center;
+	background-color: blue;
+ 	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p2{
+	background: url(../images/safety.png)no-repeat center center;
+	background-color: blue;
+ 	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.p3{
+	background: url(../images/safety.png)no-repeat center center;
+	background-color: blue;
+ 	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p4{
+	background: url(../images/safety.png)no-repeat center center;
+	background-color: blue;
+ 	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.projects a:hover, .projects a:active, .projects a:focus{
+	text-decoration: none;
+}
+
+.p1,.p2,.p3,.p4{
+	cursor: pointer;
+}
+
+.squares{
+padding-bottom: 30px;
+
+}
+
+.title_project h1{
+    position: relative;
+    top: 10px;
+}
+
+.img_square{
+	cursor: pointer;
+height: 300px;
+background: center center no-repeat ;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.full{
+	cursor: pointer;
+	height: 100vh;
+	width:100%;
+	background-color: rgba(0,0,0,.9);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 900000;
+	text-align: center;
+}
+
+.full img{
+	    margin-top: 20%;
+    text-align: center;
+}
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
@@ -1245,6 +1355,8 @@ font-size: 40px;
 
 
 }
+
+
 
 /* Portrait */
 @media only screen 
