@@ -415,7 +415,7 @@ var ar=[
   link: "#safety&eva"},
 
   m1={
-  titulo: "Escape",
+  titulo: "Escape Chute",
   content: "Diseño y suministro de sistemas de evacuación rápida para edificios, plantas de manufactura, escuelas, edificios altos",
   logo:"safety/escape.png",
   imgMin:"safety/escape",
@@ -532,6 +532,8 @@ ar[i].titulo+' </strong><p>'+ ar[i].content +'</p></div></div></a>');
 
 $(".p1").click(function(){
     $(".squares").empty();
+    $(".squares").append("<h1>HOSPITAL CANCEROLOGÍA ACAPULCO</h1>");
+
     var count=0;
     get_img(count);
     
@@ -568,6 +570,7 @@ $(".p1").click(function(){
 
 $(".p2").click(function(){
     $(".squares").empty();
+    $(".squares").append("<h1>UNAM FACULTAD DE MEDICINA</h1>");
     var count=0;
     get_img(count);
     
@@ -603,8 +606,10 @@ $(".p2").click(function(){
 // ***************************************   GET IMAGES FROM GALLERIES
 
 
+
 $(".p3").click(function(){
     $(".squares").empty();
+    $(".squares").append("<h1>HOSPITAL PEDRIATICO CMNO</h1>");
     var count=0;
     get_img(count);
     
@@ -641,6 +646,7 @@ $(".p3").click(function(){
 
 $(".p4").click(function(){
     $(".squares").empty();
+    $(".squares").append("<h1>ISSSTE VELENTÍN GÓMEZ FARIAS</h1>");
     var count=0;
     get_img(count);
     
