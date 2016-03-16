@@ -616,7 +616,7 @@ $(".p2").click(function(){
 
 $(".p3").click(function(){
     $(".squares").empty();
-    $(".squares").append("<h1>ISSSTE VELENTÍN GÓMEZ FARIAS</h1>");
+    $(".squares").append("<h1>ISSSTE VELENTÍN GÓMEZ FARÍAS</h1>");
     var count=0;
     get_img(count);
     

@@ -371,8 +371,18 @@ border: 0;
     background-position: -15px;
 }
 
-.h-img5 img{
-	    height: 193px;
+.h-img5 {
+	    
+	height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 1px solid #c3c3c3;
+    margin-top: 79px;
+    border-radius: 100px;
+    background: url(../images/medical_home.png) no-repeat;
+        background-size: 242px;
+    background-position: -15px;
+	   
 }
 /* -------------------------- */
 .footer{
