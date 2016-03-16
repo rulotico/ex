@@ -1039,7 +1039,7 @@ font-size: 40px;
 }
 
 .p1{
-	background: url(../images/safety.png)no-repeat center center;
+	background: url(../images/projects/cancer/1.jpg)no-repeat center center;
 	background-color: blue;
  	background-blend-mode: multiply;
  	-webkit-background-size: cover;
@@ -1049,7 +1049,7 @@ font-size: 40px;
 }
 
 .p2{
-	background: url(../images/safety.png)no-repeat center center;
+	background: url(../images/projects/cmno/1.jpg)no-repeat center center;
 	background-color: blue;
  	background-blend-mode: multiply;
  	-webkit-background-size: cover;
@@ -1060,7 +1060,7 @@ font-size: 40px;
 
 
 .p3{
-	background: url(../images/safety.png)no-repeat center center;
+	background: url(../images/projects/issste/1.jpg)no-repeat center center;
 	background-color: blue;
  	background-blend-mode: multiply;
  	-webkit-background-size: cover;
@@ -1070,6 +1070,16 @@ font-size: 40px;
 }
 
 .p4{
+	background: url(../images/projects/unam/1.jpg)no-repeat center center;
+	background-color: blue;
+ 	background-blend-mode: multiply;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.p5{
 	background: url(../images/safety.png)no-repeat center center;
 	background-color: blue;
  	background-blend-mode: multiply;
@@ -1083,7 +1093,7 @@ font-size: 40px;
 	text-decoration: none;
 }
 
-.p1,.p2,.p3,.p4{
+.p1,.p2,.p3,.p4,.p5{
 	cursor: pointer;
 }
 

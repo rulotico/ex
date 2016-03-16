@@ -348,7 +348,7 @@ var ar=[
   m1={
   titulo: "Advance Chemical Sensors",
   content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno, etc.",
-  logo:"",
+  logo:"medical/advance.png",
   imgMin:"medical/advance",
   link: "#medical&advance"},
 
@@ -397,7 +397,7 @@ var ar=[
   m1={
   titulo: "OP-Marks",
   content: "OP-Marks es la mejor opción para terminar con los errores del sitio equivocado en las cirugías, ya que está diseñado para marcar al paciente de una forma clara, exacta y optima previo a la cirugía.",
-  logo:"",
+  logo:"medical/op.png",
   imgMin:"medical/op",
   link: "#medical&op"},
 
@@ -454,7 +454,7 @@ var ar=[
   m1={
   titulo: "Advance Chemicals",
   content: "Fabricante de monitores pasivos para la medición personal de diferentes  vapores como: oxido de etileno, agentes anestésicos, óxido nitroso, peróxido de hidrógeno, glutaraldehído, formaldehído, ácido acético, acetona, benceno,  etc.",
-  logo:"",
+  logo:"safety/advance.png",
   imgMin:"safety/advance",
   link: "#safety&advance"},
 
@@ -465,6 +465,13 @@ var ar=[
   logo:"safety/nora_s.png",
   imgMin:"safety/nora_s",
   link: "#safety&nora_s"},
+
+  m1={
+  titulo: "Exare",
+  content: "Es la línea de candados y cinchos pasivos ideales para mantener un control visual del contenido de los carros de paro, cajas de instrumental o medicamentos, gabinetes de resguardo. Cada candado/cincho viene marcado con un número de serie único. ",
+  logo:"safety/exare.png",
+  imgMin:"safety/exare",
+  link: "#safety&exare"},
   
 
   ];
@@ -570,7 +577,7 @@ $(".p1").click(function(){
 
 $(".p2").click(function(){
     $(".squares").empty();
-    $(".squares").append("<h1>UNAM FACULTAD DE MEDICINA</h1>");
+    $(".squares").append("<h1>HOSPITAL PEDRIATIA CMNO</h1>");
     var count=0;
     get_img(count);
     
@@ -609,7 +616,7 @@ $(".p2").click(function(){
 
 $(".p3").click(function(){
     $(".squares").empty();
-    $(".squares").append("<h1>HOSPITAL PEDRIATICO CMNO</h1>");
+    $(".squares").append("<h1>ISSSTE VELENTÍN GÓMEZ FARIAS</h1>");
     var count=0;
     get_img(count);
     
@@ -646,7 +653,7 @@ $(".p3").click(function(){
 
 $(".p4").click(function(){
     $(".squares").empty();
-    $(".squares").append("<h1>ISSSTE VELENTÍN GÓMEZ FARIAS</h1>");
+    $(".squares").append("<h1>UNAM FACULTAD DE MEDICINA</h1>");
     var count=0;
     get_img(count);
     
@@ -677,6 +684,48 @@ $(".p4").click(function(){
 
   
 });
+
+
+// ***************************************   GET IMAGES FROM GALLERIES
+
+
+$(".p5").click(function(){
+    $(".squares").empty();
+    $(".squares").append("<h1>PROEZA</h1>");
+    var count=0;
+    get_img(count);
+    
+   
+       function get_img(data){
+
+          count=data+1;
+
+          $.ajax({
+              url:'images/projects/proeza/'+count+'.jpg',
+              type:'HEAD',
+              error: function()
+              { 
+                console.log(":(");
+                $(".squares").append('<script>$(".img_square").click(function(){route=$(this).attr("value");lroom(route);});</script>');
+              },
+              success: function()
+              {
+                    img_url='images/projects/proeza/'+count+'.jpg'
+                    $(".squares").append("<div class='animated fadeInUp' ><div class='col-md-4 img_square' style='background-image:url(images/projects/proeza/"+
+                      count+".jpg);' value='"+img_url+"' ></div></div>");
+                  get_img(count);
+                 
+              }
+          });
+       }
+
+
+  
+});
+
+
+
+
 
 
 
