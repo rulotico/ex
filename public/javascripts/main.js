@@ -749,14 +749,11 @@ $(function() {
         $("#catalog_link").change(function() {
             if ($(this).val()) {
                 window.open($(this).val(), '_blank');
-                $("#formElement").submit();
+                $("#catalog_link").submit();
             }
         });
 
-        // just to be sure that it is submitting, remove this code
-        $("#formElement").submit(function() {
-            alert('submitting ... ');
-        });
+        
     });
 
 
