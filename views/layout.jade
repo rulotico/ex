@@ -65,13 +65,13 @@ html
           
           div.descarga Descarga nuestros catálogos
           .form-group.catalogos
-            select.form-control
+            select.form-control#catalog_link
               option Escoge el catálogo
-              option AVIATION
-              option CONSULTING
+              option(value="/aviation.pdf") AVIATION
+              option(value="/consulting.pdf") CONSULTING
               option ENERGY
-              option MEDICAL
-              option SAFETY
+              option(value="/medical.pdf") MEDICAL
+              option(value="/safety.pdf") SAFETY
         .col-md-12.f_foot
           .col-md-4.x_icn
             img(src="../images/x_icn.svg", alt="")
