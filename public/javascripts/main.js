@@ -745,16 +745,29 @@ function lroom(data){
 
 
 
-$(function() {
-        $("#catalog_link").change(function() {
-            if ($(this).val()) {
-                window.open($(this).val(), '_blank');
-                $("#catalog_link").submit();
+document.getElementById("catalog_link").onchange = function() {
+        if (this.selectedIndex!==0) {
+            if (this.value.indexOf('http://') == 0) {
+                window.open(this.value,'_blank');
             }
-        });
+            else {
+                window.location.href = this.value;
+
+            }
+        }
+    };
+
+
+// $(function() {
+//         $("#catalog_link").change(function() {
+//             if ($(this).val()) {
+//                 window.open($(this).val(), '_blank');
+//                 $("#catalog_link").submit();
+//             }
+//         });
 
         
-    });
+//     });
 
 
 
