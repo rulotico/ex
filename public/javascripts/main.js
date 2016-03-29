@@ -479,6 +479,14 @@ var ar=[
   logo:"safety/exare.png",
   imgMin:"safety/exare",
   link: "#safety&exare"},
+
+
+   m1={
+  titulo: "ResQme®",
+  content: "ResQme® y hoy día se fabrica en Los Estados Unidos para su distribución global. La herramienta ResQme® sirve para quebrar ventanillas y cortar cinturones de seguridad - una herramienta de emergencia ideal para la seguridad de cualquier automovilista.  ",
+  logo:"safety/res.png",
+  imgMin:"safety/res",
+  link: "#safety&res"},
   
 
   ];
